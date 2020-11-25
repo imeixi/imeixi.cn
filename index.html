@@ -1,0 +1,2710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_36dp.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_18dp.svg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"imeixi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="You want something. Go get it！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IMEIXI">
+<meta property="og:url" content="https://imeixi.github.io/index.html">
+<meta property="og:site_name" content="IMEIXI">
+<meta property="og:description" content="You want something. Go get it！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="imeixi">
+<meta property="article:tag" content="imeixi">
+<meta property="article:tag" content=" IMEIXI">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://imeixi.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>IMEIXI</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165379070-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165379070-1');
+      }
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e401215d013058a71b56c9fb7ca5807c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="IMEIXI" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">IMEIXI</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">THE GROWTH PATH OF DATA SCIENTISTS</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/12/adb-ming-ling-mo-ni-an-jian-shi-jian-keycode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/12/adb-ming-ling-mo-ni-an-jian-shi-jian-keycode/" class="post-title-link" itemprop="url">adb命令模拟按键事件 KeyCode</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-12 21:31:30" itemprop="dateCreated datePublished" datetime="2020-07-12T21:31:30+08:00">2020-07-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="adb命令模拟按键事件-KeyCode"><a href="#adb命令模拟按键事件-KeyCode" class="headerlink" title="adb命令模拟按键事件 KeyCode"></a>adb命令模拟按键事件 KeyCode</h1><hr>
+<p>转自：<a href="https://blog.csdn.net/jlminghui/article/details/39268419" target="_blank" rel="noopener">https://blog.csdn.net/jlminghui/article/details/39268419</a></p>
+<p>例子：</p>
+<p>//这条命令相当于按了设备的Backkey键<br>adb shell input keyevent 4  </p>
+<p> //可以解锁屏幕</p>
+<p>adb shell input keyevent  82 </p>
+<p>//在屏幕上做划屏操作，前四个数为坐标点，后面是滑动的时间（单位毫秒）</p>
+<p>adb shell input swipe 50 250 250 250 500 </p>
+<p>//在屏幕上点击坐标点x=50  y=250的位置。</p>
+<p>adb shell input tap 50 250 </p>
+<p>//输入字符abc</p>
+<p>adb shell input text abc</p>
+<p>// 显示下拉导航</p>
+<p>adb shell service call statusbar 1 <em>//下拉显示命令行</em> </p>
+<p>adb shell service call statusbar 2 <em>//收缩状态栏</em></p>
+<p>每个数字与keycode对应表如下：<br>0 –&gt;  “KEYCODE_UNKNOWN”<br>1 –&gt;  “KEYCODE_MENU”<br>2 –&gt;  “KEYCODE_SOFT_RIGHT”<br>3 –&gt;  “KEYCODE_HOME”<br>4 –&gt;  “KEYCODE_BACK”<br>5 –&gt;  “KEYCODE_CALL”<br>6 –&gt;  “KEYCODE_ENDCALL”<br>7 –&gt;  “KEYCODE_0”<br>8 –&gt;  “KEYCODE_1”<br>9 –&gt;  “KEYCODE_2”<br>10 –&gt;  “KEYCODE_3”<br>11 –&gt;  “KEYCODE_4”<br>12 –&gt;  “KEYCODE_5”<br>13 –&gt;  “KEYCODE_6”<br>14 –&gt;  “KEYCODE_7”<br>15 –&gt;  “KEYCODE_8”<br>16 –&gt;  “KEYCODE_9”<br>17 –&gt;  “KEYCODE_STAR”<br>18 –&gt;  “KEYCODE_POUND”<br>19 –&gt;  “KEYCODE_DPAD_UP”<br>20 –&gt;  “KEYCODE_DPAD_DOWN”<br>21 –&gt;  “KEYCODE_DPAD_LEFT”<br>22 –&gt;  “KEYCODE_DPAD_RIGHT”<br>23 –&gt;  “KEYCODE_DPAD_CENTER”<br>24 –&gt;  “KEYCODE_VOLUME_UP”<br>25 –&gt;  “KEYCODE_VOLUME_DOWN”<br>26 –&gt;  “KEYCODE_POWER”<br>27 –&gt;  “KEYCODE_CAMERA”<br>28 –&gt;  “KEYCODE_CLEAR”<br>29 –&gt;  “KEYCODE_A”<br>30 –&gt;  “KEYCODE_B”<br>31 –&gt;  “KEYCODE_C”<br>32 –&gt;  “KEYCODE_D”<br>33 –&gt;  “KEYCODE_E”<br>34 –&gt;  “KEYCODE_F”<br>35 –&gt;  “KEYCODE_G”<br>36 –&gt;  “KEYCODE_H”<br>37 –&gt;  “KEYCODE_I”<br>38 –&gt;  “KEYCODE_J”<br>39 –&gt;  “KEYCODE_K”<br>40 –&gt;  “KEYCODE_L”<br>41 –&gt;  “KEYCODE_M”<br>42 –&gt;  “KEYCODE_N”<br>43 –&gt;  “KEYCODE_O”<br>44 –&gt;  “KEYCODE_P”<br>45 –&gt;  “KEYCODE_Q”<br>46 –&gt;  “KEYCODE_R”<br>47 –&gt;  “KEYCODE_S”<br>48 –&gt;  “KEYCODE_T”<br>49 –&gt;  “KEYCODE_U”<br>50 –&gt;  “KEYCODE_V”<br>51 –&gt;  “KEYCODE_W”<br>52 –&gt;  “KEYCODE_X”<br>53 –&gt;  “KEYCODE_Y”<br>54 –&gt;  “KEYCODE_Z”<br>55 –&gt;  “KEYCODE_COMMA”<br>56 –&gt;  “KEYCODE_PERIOD”<br>57 –&gt;  “KEYCODE_ALT_LEFT”<br>58 –&gt;  “KEYCODE_ALT_RIGHT”<br>59 –&gt;  “KEYCODE_SHIFT_LEFT”<br>60 –&gt;  “KEYCODE_SHIFT_RIGHT”<br>61 –&gt;  “KEYCODE_TAB”<br>62 –&gt;  “KEYCODE_SPACE”<br>63 –&gt;  “KEYCODE_SYM”<br>64 –&gt;  “KEYCODE_EXPLORER”<br>65 –&gt;  “KEYCODE_ENVELOPE”<br>66 –&gt;  “KEYCODE_ENTER”<br>67 –&gt;  “KEYCODE_DEL”<br>68 –&gt;  “KEYCODE_GRAVE”<br>69 –&gt;  “KEYCODE_MINUS”<br>70 –&gt;  “KEYCODE_EQUALS”<br>71 –&gt;  “KEYCODE_LEFT_BRACKET”<br>72 –&gt;  “KEYCODE_RIGHT_BRACKET”<br>73 –&gt;  “KEYCODE_BACKSLASH”<br>74 –&gt;  “KEYCODE_SEMICOLON”<br>75 –&gt;  “KEYCODE_APOSTROPHE”<br>76 –&gt;  “KEYCODE_SLASH”<br>77 –&gt;  “KEYCODE_AT”<br>78 –&gt;  “KEYCODE_NUM”<br>79 –&gt;  “KEYCODE_HEADSETHOOK”<br>80 –&gt;  “KEYCODE_FOCUS”<br>81 –&gt;  “KEYCODE_PLUS”<br>82 –&gt;  “KEYCODE_MENU”<br>83 –&gt;  “KEYCODE_NOTIFICATION”<br>84 –&gt;  “KEYCODE_SEARCH”<br>85 –&gt;  “TAG_LAST_KEYCODE”</p>
+<h1 id="KEYCODE列表"><a href="#KEYCODE列表" class="headerlink" title="KEYCODE列表"></a>KEYCODE列表</h1><h1 id="电话键"><a href="#电话键" class="headerlink" title="电话键"></a>电话键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_CALL</td>
+<td>拨号键</td>
+<td>5</td>
+</tr>
+<tr>
+<td>KEYCODE_ENDCALL</td>
+<td>挂机键</td>
+<td>6</td>
+</tr>
+<tr>
+<td>KEYCODE_HOME</td>
+<td>按键Home</td>
+<td>3</td>
+</tr>
+<tr>
+<td>KEYCODE_MENU</td>
+<td><a href="http://www.haogongju.net/tag/菜单" target="_blank" rel="noopener">菜单</a>键</td>
+<td>82</td>
+</tr>
+<tr>
+<td>KEYCODE_BACK</td>
+<td>返回键</td>
+<td>4</td>
+</tr>
+<tr>
+<td>KEYCODE_S<a href="http://www.haogongju.net/tag/EA" target="_blank" rel="noopener">EA</a>RCH</td>
+<td><a href="http://www.haogongju.net/tag/搜索" target="_blank" rel="noopener">搜索</a>键</td>
+<td>84</td>
+</tr>
+<tr>
+<td>KEYCODE_CAMERA</td>
+<td>拍照键</td>
+<td>27</td>
+</tr>
+<tr>
+<td>KEYCODE_FOCUS</td>
+<td>拍照对焦键</td>
+<td>80</td>
+</tr>
+<tr>
+<td>KEYCODE_POWER</td>
+<td>电源键</td>
+<td>26</td>
+</tr>
+<tr>
+<td>KEYCODE_NOTIFICATION</td>
+<td>通知键</td>
+<td>83</td>
+</tr>
+<tr>
+<td>KEYCODE_MUTE</td>
+<td>话筒静音键</td>
+<td>91</td>
+</tr>
+<tr>
+<td>KEYCODE_VOLUME_MUTE</td>
+<td>扬声器静音键</td>
+<td>164</td>
+</tr>
+<tr>
+<td>KEYCODE_VOLUME_UP</td>
+<td>音量增加键</td>
+<td>24</td>
+</tr>
+<tr>
+<td>KEYCODE_VOLUME_DOWN</td>
+<td>音量减小键</td>
+<td>25</td>
+</tr>
+</tbody></table>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="控制键"><a href="#控制键" class="headerlink" title="控制键"></a>控制键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_ENTER</td>
+<td>回车键</td>
+<td>66</td>
+</tr>
+<tr>
+<td>KEYCODE_ESCAPE</td>
+<td>ESC键</td>
+<td>111</td>
+</tr>
+<tr>
+<td>KEYCODE_DPAD_CENTER</td>
+<td><a href="http://www.haogongju.net/tag/导航" target="_blank" rel="noopener">导航</a>键 确定键</td>
+<td>23</td>
+</tr>
+<tr>
+<td>KEYCODE_DPAD_UP</td>
+<td>导航键 向上</td>
+<td>19</td>
+</tr>
+<tr>
+<td>KEYCODE_DPAD_DOWN</td>
+<td>导航键 向下</td>
+<td>20</td>
+</tr>
+<tr>
+<td>KEYCODE_DPAD_LEFT</td>
+<td>导航键 向左</td>
+<td>21</td>
+</tr>
+<tr>
+<td>KEYCODE_DPAD_RIGHT</td>
+<td>导航键 向右</td>
+<td>22</td>
+</tr>
+<tr>
+<td>KEYCODE_MOVE_HOME</td>
+<td>光标<a href="http://www.haogongju.net/tag/移动" target="_blank" rel="noopener">移动</a>到开始键</td>
+<td>122</td>
+</tr>
+<tr>
+<td>KEYCODE_MOVE_END</td>
+<td>光标移动到末尾键</td>
+<td>123</td>
+</tr>
+<tr>
+<td>KEYCODE_PAGE_UP</td>
+<td>向上翻页键</td>
+<td>92</td>
+</tr>
+<tr>
+<td>KEYCODE_PAGE_DOWN</td>
+<td>向下翻页键</td>
+<td>93</td>
+</tr>
+<tr>
+<td>KEYCODE_DEL</td>
+<td>退格键</td>
+<td>67</td>
+</tr>
+<tr>
+<td>KEYCODE_FORWARD_DEL</td>
+<td>删除键</td>
+<td>112</td>
+</tr>
+<tr>
+<td>KEYCODE_<a href="http://www.haogongju.net/tag/in" target="_blank" rel="noopener">IN</a>SERT</td>
+<td>插入键</td>
+<td>124</td>
+</tr>
+<tr>
+<td>KEYCODE_TAB</td>
+<td>Tab键</td>
+<td>61</td>
+</tr>
+<tr>
+<td>KEYCODE_NUM_LOCK</td>
+<td>小键盘锁</td>
+<td>143</td>
+</tr>
+<tr>
+<td>KEYCODE_CAPS_LOCK</td>
+<td>大写锁定键</td>
+<td>115</td>
+</tr>
+<tr>
+<td>KEYCODE_BREAK</td>
+<td>Break/Pause键</td>
+<td>121</td>
+</tr>
+<tr>
+<td>KEYCODE_SCROLL_LOCK</td>
+<td>滚动锁定键</td>
+<td>116</td>
+</tr>
+<tr>
+<td>KEYCODE_ZOOM_IN</td>
+<td>放大键</td>
+<td>168</td>
+</tr>
+<tr>
+<td>KEYCODE_ZOOM_OUT</td>
+<td>缩小键</td>
+<td>169</td>
+</tr>
+</tbody></table>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><h1 id="组合键"><a href="#组合键" class="headerlink" title="组合键"></a>组合键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_ALT_LEFT</td>
+<td>Alt+Left</td>
+</tr>
+<tr>
+<td>KEYCODE_ALT_RIGHT</td>
+<td>Alt+Right</td>
+</tr>
+<tr>
+<td>KEYCODE_CTRL_LEFT</td>
+<td>Control+Left</td>
+</tr>
+<tr>
+<td>KEYCODE_CTRL_RIGHT</td>
+<td>Control+Right</td>
+</tr>
+<tr>
+<td>KEYCODE_SHIFT_LEFT</td>
+<td>Shift+Left</td>
+</tr>
+<tr>
+<td>KEYCODE_SHIFT_RIGHT</td>
+<td>Shift+Right</td>
+</tr>
+</tbody></table>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><h1 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_0</td>
+<td>按键’0’</td>
+<td>7</td>
+</tr>
+<tr>
+<td>KEYCODE_1</td>
+<td>按键’1’</td>
+<td>8</td>
+</tr>
+<tr>
+<td>KEYCODE_2</td>
+<td>按键’2’</td>
+<td>9</td>
+</tr>
+<tr>
+<td>KEYCODE_3</td>
+<td>按键’3’</td>
+<td>10</td>
+</tr>
+<tr>
+<td>KEYCODE_4</td>
+<td>按键’4’</td>
+<td>11</td>
+</tr>
+<tr>
+<td>KEYCODE_5</td>
+<td>按键’5’</td>
+<td>12</td>
+</tr>
+<tr>
+<td>KEYCODE_6</td>
+<td>按键’6’</td>
+<td>13</td>
+</tr>
+<tr>
+<td>KEYCODE_7</td>
+<td>按键’7’</td>
+<td>14</td>
+</tr>
+<tr>
+<td>KEYCODE_8</td>
+<td>按键’8’</td>
+<td>15</td>
+</tr>
+<tr>
+<td>KEYCODE_9</td>
+<td>按键’9’</td>
+<td>16</td>
+</tr>
+<tr>
+<td>KEYCODE_A</td>
+<td>按键’A’</td>
+<td>29</td>
+</tr>
+<tr>
+<td>KEYCODE_B</td>
+<td>按键’B’</td>
+<td>30</td>
+</tr>
+<tr>
+<td>KEYCODE_C</td>
+<td>按键’C’</td>
+<td>31</td>
+</tr>
+<tr>
+<td>KEYCODE_D</td>
+<td>按键’D’</td>
+<td>32</td>
+</tr>
+<tr>
+<td>KEYCODE_E</td>
+<td>按键’E’</td>
+<td>33</td>
+</tr>
+<tr>
+<td>KEYCODE_F</td>
+<td>按键’F’</td>
+<td>34</td>
+</tr>
+<tr>
+<td>KEYCODE_G</td>
+<td>按键’G’</td>
+<td>35</td>
+</tr>
+<tr>
+<td>KEYCODE_H</td>
+<td>按键’H’</td>
+<td>36</td>
+</tr>
+<tr>
+<td>KEYCODE_I</td>
+<td>按键’I’</td>
+<td>37</td>
+</tr>
+<tr>
+<td>KEYCODE_J</td>
+<td>按键’J’</td>
+<td>38</td>
+</tr>
+<tr>
+<td>KEYCODE_K</td>
+<td>按键’K’</td>
+<td>39</td>
+</tr>
+<tr>
+<td>KEYCODE_L</td>
+<td>按键’L’</td>
+<td>40</td>
+</tr>
+<tr>
+<td>KEYCODE_M</td>
+<td>按键’M’</td>
+<td>41</td>
+</tr>
+<tr>
+<td>KEYCODE_N</td>
+<td>按键’N’</td>
+<td>42</td>
+</tr>
+<tr>
+<td>KEYCODE_O</td>
+<td>按键’O’</td>
+<td>43</td>
+</tr>
+<tr>
+<td>KEYCODE_P</td>
+<td>按键’P’</td>
+<td>44</td>
+</tr>
+<tr>
+<td>KEYCODE_Q</td>
+<td>按键’Q’</td>
+<td>45</td>
+</tr>
+<tr>
+<td>KEYCODE_R</td>
+<td>按键’R’</td>
+<td>46</td>
+</tr>
+<tr>
+<td>KEYCODE_S</td>
+<td>按键’S’</td>
+<td>47</td>
+</tr>
+<tr>
+<td>KEYCODE_T</td>
+<td>按键’T’</td>
+<td>48</td>
+</tr>
+<tr>
+<td>KEYCODE_U</td>
+<td>按键’U’</td>
+<td>49</td>
+</tr>
+<tr>
+<td>KEYCODE_V</td>
+<td>按键’V’</td>
+<td>50</td>
+</tr>
+<tr>
+<td>KEYCODE_W</td>
+<td>按键’W’</td>
+<td>51</td>
+</tr>
+<tr>
+<td>KEYCODE_X</td>
+<td>按键’X’</td>
+<td>52</td>
+</tr>
+<tr>
+<td>KEYCODE_Y</td>
+<td>按键’Y’</td>
+<td>53</td>
+</tr>
+<tr>
+<td>KEYCODE_Z</td>
+<td>按键’Z’</td>
+<td>54</td>
+</tr>
+</tbody></table>
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_PLUS</td>
+<td>按键’+’</td>
+</tr>
+<tr>
+<td>KEYCODE_MINUS</td>
+<td>按键’-‘</td>
+</tr>
+<tr>
+<td>KEYCODE_STAR</td>
+<td>按键’*’</td>
+</tr>
+<tr>
+<td>KEYCODE_SLASH</td>
+<td>按键’/‘</td>
+</tr>
+<tr>
+<td>KEYCODE_EQUALS</td>
+<td>按键’=’</td>
+</tr>
+<tr>
+<td>KEYCODE_AT</td>
+<td>按键‘@’</td>
+</tr>
+<tr>
+<td>KEYCODE_POUND</td>
+<td>按键’#’</td>
+</tr>
+<tr>
+<td>KEYCODE_AP<a href="http://www.haogongju.net/tag/OS" target="_blank" rel="noopener">OS</a>TROPHE</td>
+<td>按键’’’ (单引号)</td>
+</tr>
+<tr>
+<td>KEYCODE_BACKSLASH</td>
+<td>按键’&#39;</td>
+</tr>
+<tr>
+<td>KEYCODE_COMMA</td>
+<td>按键’,’</td>
+</tr>
+<tr>
+<td>KEYCODE_PERIOD</td>
+<td>按键’.’</td>
+</tr>
+<tr>
+<td>KEYCODE_LEFT_BRACKET</td>
+<td>按键’[‘</td>
+</tr>
+<tr>
+<td>KEYCODE_RIGHT_BRACKET</td>
+<td>按键’]’</td>
+</tr>
+<tr>
+<td>KEYCODE_<a href="http://www.haogongju.net/tag/SEM" target="_blank" rel="noopener">SEM</a>ICOLON</td>
+<td>按键’;’</td>
+</tr>
+<tr>
+<td>KEYCODE_GRAVE</td>
+<td>按键’`’</td>
+</tr>
+<tr>
+<td>KEYCODE_SPACE</td>
+<td>空格键</td>
+</tr>
+</tbody></table>
+<h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><h1 id="小键盘"><a href="#小键盘" class="headerlink" title="小键盘"></a>小键盘</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_NUMPAD_0</td>
+<td>小键盘按键’0’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_1</td>
+<td>小键盘按键’1’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_2</td>
+<td>小键盘按键’2’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_3</td>
+<td>小键盘按键’3’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_4</td>
+<td>小键盘按键’4’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_5</td>
+<td>小键盘按键’5’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_6</td>
+<td>小键盘按键’6’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_7</td>
+<td>小键盘按键’7’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_8</td>
+<td>小键盘按键’8’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_9</td>
+<td>小键盘按键’9’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_ADD</td>
+<td>小键盘按键’+’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_SUBTRACT</td>
+<td>小键盘按键’-‘</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_MULT<a href="http://www.haogongju.net/tag/IP" target="_blank" rel="noopener">IP</a>LY</td>
+<td>小键盘按键’*’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_DIV<a href="http://www.haogongju.net/tag/IDE" target="_blank" rel="noopener">IDE</a></td>
+<td>小键盘按键’/‘</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_EQUALS</td>
+<td>小键盘按键’=’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_COMMA</td>
+<td>小键盘按键’,’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_DOT</td>
+<td>小键盘按键’.’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_LEFT_PAREN</td>
+<td>小键盘按键’(‘</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_RIGHT_PAREN</td>
+<td>小键盘按键’)’</td>
+</tr>
+<tr>
+<td>KEYCODE_NUMPAD_ENTER</td>
+<td>小键盘按键回车</td>
+</tr>
+</tbody></table>
+<h1 id="-5"><a href="#-5" class="headerlink" title=""></a></h1><h1 id="功能键"><a href="#功能键" class="headerlink" title="功能键"></a>功能键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_F1</td>
+<td>按键F1</td>
+</tr>
+<tr>
+<td>KEYCODE_F2</td>
+<td>按键F2</td>
+</tr>
+<tr>
+<td>KEYCODE_F3</td>
+<td>按键F3</td>
+</tr>
+<tr>
+<td>KEYCODE_F4</td>
+<td>按键F4</td>
+</tr>
+<tr>
+<td>KEYCODE_F5</td>
+<td>按键F5</td>
+</tr>
+<tr>
+<td>KEYCODE_F6</td>
+<td>按键F6</td>
+</tr>
+<tr>
+<td>KEYCODE_F7</td>
+<td>按键F7</td>
+</tr>
+<tr>
+<td>KEYCODE_F8</td>
+<td>按键F8</td>
+</tr>
+<tr>
+<td>KEYCODE_F9</td>
+<td>按键F9</td>
+</tr>
+<tr>
+<td>KEYCODE_F10</td>
+<td>按键F10</td>
+</tr>
+<tr>
+<td>KEYCODE_F11</td>
+<td>按键F11</td>
+</tr>
+<tr>
+<td>KEYCODE_F12</td>
+<td>按键F12</td>
+</tr>
+</tbody></table>
+<h2 id="-6"><a href="#-6" class="headerlink" title=""></a></h2><h1 id="多媒体键"><a href="#多媒体键" class="headerlink" title="多媒体键"></a>多媒体键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_<a href="http://www.haogongju.net/tag/MED" target="_blank" rel="noopener">MED</a>IA_PLAY</td>
+<td>多媒体键 播放</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_STOP</td>
+<td>多媒体键 停止</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_PAUSE</td>
+<td>多媒体键 暂停</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_PLAY_PAUSE</td>
+<td>多媒体键 播放/暂停</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_FAST_FORWARD</td>
+<td>多媒体键 快进</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_REWIND</td>
+<td>多媒体键 快退</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_NEXT</td>
+<td>多媒体键 下一首</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_<a href="http://www.haogongju.net/tag/PR" target="_blank" rel="noopener">PR</a>EVIOUS</td>
+<td>多媒体键 上一首</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_CLOSE</td>
+<td>多媒体键 关闭</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_EJECT</td>
+<td>多媒体键 弹出</td>
+</tr>
+<tr>
+<td>KEYCODE_MEDIA_RECORD</td>
+<td>多媒体键 录音</td>
+</tr>
+</tbody></table>
+<h2 id="-7"><a href="#-7" class="headerlink" title=""></a></h2><h1 id="手柄按键"><a href="#手柄按键" class="headerlink" title="手柄按键"></a>手柄按键</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_BUTTON_1</td>
+<td>通用<a href="http://www.haogongju.net/tag/游戏" target="_blank" rel="noopener">游戏</a>手柄按钮#1</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_2</td>
+<td>通用游戏手柄按钮 #2</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_3</td>
+<td>通用游戏手柄按钮 #3</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_4</td>
+<td>通用游戏手柄按钮 #4</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_5</td>
+<td>通用游戏手柄按钮 #5</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_6</td>
+<td>通用游戏手柄按钮 #6</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_7</td>
+<td>通用游戏手柄按钮 #7</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_8</td>
+<td>通用游戏手柄按钮 #8</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_9</td>
+<td>通用游戏手柄按钮 #9</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_10</td>
+<td>通用游戏手柄按钮 #10</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_11</td>
+<td>通用游戏手柄按钮 #11</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_12</td>
+<td>通用游戏手柄按钮 #12</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_13</td>
+<td>通用游戏手柄按钮 #13</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_14</td>
+<td>通用游戏手柄按钮 #14</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_15</td>
+<td>通用游戏手柄按钮 #15</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_16</td>
+<td>通用游戏手柄按钮 #16</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_A</td>
+<td>游戏手柄按钮 A</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_B</td>
+<td>游戏手柄按钮 B</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_C</td>
+<td>游戏手柄按钮 C</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_X</td>
+<td>游戏手柄按钮 X</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_Y</td>
+<td>游戏手柄按钮 Y</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_Z</td>
+<td>游戏手柄按钮 Z</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_L1</td>
+<td>游戏手柄按钮 L1</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_L2</td>
+<td>游戏手柄按钮 L2</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_R1</td>
+<td>游戏手柄按钮 R1</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_R2</td>
+<td>游戏手柄按钮 R2</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_MODE</td>
+<td>游戏手柄按钮 Mode</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_SELECT</td>
+<td>游戏手柄按钮 Select</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_START</td>
+<td>游戏手柄按钮 Start</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_THUMBL</td>
+<td>Left Thumb Button</td>
+</tr>
+<tr>
+<td>KEYCODE_BUTTON_THUMBR</td>
+<td>Right Thumb Button</td>
+</tr>
+</tbody></table>
+<h2 id="-8"><a href="#-8" class="headerlink" title=""></a></h2><h1 id="待查"><a href="#待查" class="headerlink" title="待查"></a>待查</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>KEYCODE_NUM</td>
+<td>按键Number modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_INFO</td>
+<td>按键Info</td>
+</tr>
+<tr>
+<td>KEYCODE_<a href="http://www.haogongju.net/tag/App" target="_blank" rel="noopener">APP</a>_SW<a href="http://www.haogongju.net/tag/IT" target="_blank" rel="noopener">IT</a>CH</td>
+<td>按键App switch</td>
+</tr>
+<tr>
+<td>KEYCODE_BOOKMARK</td>
+<td>按键Bookmark</td>
+</tr>
+<tr>
+<td>KEYCODE_AVR_INPUT</td>
+<td>按键A/V Receiver input</td>
+</tr>
+<tr>
+<td>KEYCODE_AVR_POWER</td>
+<td>按键A/V Receiver power</td>
+</tr>
+<tr>
+<td>KEYCODE_CAPTIONS</td>
+<td>按键Toggle captions</td>
+</tr>
+<tr>
+<td>KEYCODE_CHANNEL_DOWN</td>
+<td>按键Channel down</td>
+</tr>
+<tr>
+<td>KEYCODE_CHANNEL_UP</td>
+<td>按键Channel up</td>
+</tr>
+<tr>
+<td>KEYCODE_CLEAR</td>
+<td>按键Clear</td>
+</tr>
+<tr>
+<td>KEYCODE_DVR</td>
+<td>按键DVR</td>
+</tr>
+<tr>
+<td>KEYCODE_ENVELOPE</td>
+<td>按键Envelope special function</td>
+</tr>
+<tr>
+<td>KEYCODE_E<a href="http://www.haogongju.net/tag/XP" target="_blank" rel="noopener">XP</a>LORER</td>
+<td>按键Explorer special function</td>
+</tr>
+<tr>
+<td>KEYCODE_FORWARD</td>
+<td>按键Forward</td>
+</tr>
+<tr>
+<td>KEYCODE_FORWARD_DEL</td>
+<td>按键Forward Delete</td>
+</tr>
+<tr>
+<td>KEYCODE_FUNCTION</td>
+<td>按键Function modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_G<a href="http://www.haogongju.net/tag/UI" target="_blank" rel="noopener">UI</a>DE</td>
+<td>按键Guide</td>
+</tr>
+<tr>
+<td>KEYCODE_HEADSETHOOK</td>
+<td>按键Headset Hook</td>
+</tr>
+<tr>
+<td>KEYCODE_META_LEFT</td>
+<td>按键Left Meta modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_META_RIGHT</td>
+<td>按键Right Meta modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_PICTSYMBOLS</td>
+<td>按键Picture Symbols modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_PROG_BL<a href="http://www.haogongju.net/tag/UE" target="_blank" rel="noopener">UE</a></td>
+<td>按键Blue “programmable”</td>
+</tr>
+<tr>
+<td>KEYCODE_PROG_GREEN</td>
+<td>按键Green “programmable”</td>
+</tr>
+<tr>
+<td>KEYCODE_PROG_RED</td>
+<td>按键Red “programmable”</td>
+</tr>
+<tr>
+<td>KEYCODE_PROG_YELLOW</td>
+<td>按键Yellow “programmable”</td>
+</tr>
+<tr>
+<td>KEYCODE_SETTINGS</td>
+<td>按键Settings</td>
+</tr>
+<tr>
+<td>KEYCODE_SOFT_LEFT</td>
+<td>按键Soft Left</td>
+</tr>
+<tr>
+<td>KEYCODE_SOFT_RIGHT</td>
+<td>按键Soft Right</td>
+</tr>
+<tr>
+<td>KEYCODE_STB_INPUT</td>
+<td>按键Set-top-box input</td>
+</tr>
+<tr>
+<td>KEYCODE_STB_POWER</td>
+<td>按键Set-top-box power</td>
+</tr>
+<tr>
+<td>KEYCODE_SWITCH_CHARSET</td>
+<td>按键Switch Charset modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_SYM</td>
+<td>按键Symbol modifier</td>
+</tr>
+<tr>
+<td>KEYCODE_SYSRQ</td>
+<td>按键System Request / Print Screen</td>
+</tr>
+<tr>
+<td>KEYCODE_TV</td>
+<td>按键TV</td>
+</tr>
+<tr>
+<td>KEYCODE_TV_INPUT</td>
+<td>按键TV input</td>
+</tr>
+<tr>
+<td>KEYCODE_TV_POWER</td>
+<td>按键TV power</td>
+</tr>
+<tr>
+<td>KEYCODE_WINDOW</td>
+<td>按键Window</td>
+</tr>
+<tr>
+<td>KEYCODE_UNKNOWN</td>
+<td>未知按键</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-er/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-er/" class="post-title-link" itemprop="url">互联网中搜索大数据(二)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 11:02:51" itemprop="dateCreated datePublished" datetime="2020-07-02T11:02:51+08:00">2020-07-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="一，国内咨询机构网站数据报告列表"><a href="#一，国内咨询机构网站数据报告列表" class="headerlink" title="一，国内咨询机构网站数据报告列表"></a><strong>一，国内咨询机构网站数据报告列表</strong></h4><ol>
+<li><a href="http://report.iresearch.cn/" target="_blank" rel="noopener">艾瑞研究-艾瑞网</a>（互联网行业报告）</li>
+<li><a href="http://index.iresearch.com.cn/app" target="_blank" rel="noopener">艾瑞APP指数</a>-艾瑞网（移动App TOP 1000 月度活跃和日活跃）</li>
+<li><a href="http://index.iresearch.com.cn/pc" target="_blank" rel="noopener">艾瑞PC指数</a>-艾瑞网（PC TOP 1000-月度活跃和日活跃）</li>
+<li><a href="http://www.199it.com/" target="_blank" rel="noopener">199IT互联网数据中心</a>-所有行业报告，内容繁多，支持搜索</li>
+<li><a href="http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/" target="_blank" rel="noopener">中国互联网络信息中心</a>-CNNIC数据可以当做互联网人口普查基础表来看</li>
+<li><a href="https://www.analysys.cn/article%23analysis" target="_blank" rel="noopener">数据新知 - 易观</a>（易观智库）-仅参考</li>
+<li><a href="http://www.umeng.com/reports.html%3Fspm%3D0.0.0.0.eIY17Q%26from%3Dhp" target="_blank" rel="noopener">【友盟+】数据报告</a>-（被阿里收购）仅参考</li>
+<li><a href="http://www.dcci.com.cn/report/index.html" target="_blank" rel="noopener">http://www.dcci.com.cn/report/index.html</a>  （DCCI）-仅参考</li>
+<li><a href="http://cn.sino-mr.com/viewpoint" target="_blank" rel="noopener">北京赛诺市场研究有限责任公司</a>赛诺数据，智能机出货量的专业统计</li>
+<li><a href="http://mi.talkingdata.com/reports.html%3Fcategory%3Dall" target="_blank" rel="noopener">数据报告-移动观象台-TalkingData</a>（Talkingdata报告）-行业报告可看</li>
+<li><a href="http://www.iimedia.cn/%23shuju" target="_blank" rel="noopener">艾媒网-全球移动互联网行业数据发布平台/iiMedia Research出品</a>-行业报告可看</li>
+<li><a href="https://www.dataeye.com/report" target="_blank" rel="noopener">DataEye大数据移动营销综合服务商-数据报告</a>-dataeye-偏手游方向</li>
+<li><a href="http://aso100.com/" target="_blank" rel="noopener">ASO100 - 专业App Store数据平台丨ASO优化专家平台丨iOS榜单排行榜查询工具</a> </li>
+<li>电影电视行业<a href="http://www.entgroup.cn/report/f/" target="_blank" rel="noopener">免费报告列表页</a>-艺恩咨询（是个研究娱乐行业的公司，提供行业报告）</li>
+<li><a href="http://www.dotour.cn/topics/data" target="_blank" rel="noopener">旅游数据报告-旅游圈</a>（旅游行业报告）</li>
+<li><a href="https://www.aldzs.com/bg" target="_blank" rel="noopener">小程序报告-阿拉丁统计</a> </li>
+<li>爱应用：<a href="https://www.iai.cn/" target="_blank" rel="noopener">一个应用所有历史版本的产品分析截图记录</a>。</li>
+<li><a href="https://www.appannie.com/cn/" target="_blank" rel="noopener">Appannie</a>，看国外的人都下载什么应用</li>
+<li><a href="https://www.caasdata.com/index/report/index.html" target="_blank" rel="noopener">卡思数据-短视频网红分析数据分析</a> </li>
+<li><a href="http://www.gjzq.com.cn/main/invest-advisory/index.html" target="_blank" rel="noopener">国金证券研究所</a>（国家宏观经济研究数据和报告）</li>
+<li><a href="https://research.cicc.com/index" target="_blank" rel="noopener">中金研报</a>（不用付费也可以看到大部分的结论）</li>
+<li><a href="https://toobigdata.com/douyin/users" target="_blank" rel="noopener">抖音快手的热门视频和kol的</a>名单</li>
+<li><a href="https://tophub.today/" target="_blank" rel="noopener">各大媒体的每天的热门排行榜</a> </li>
+<li><a href="http://hao.199it.com/douyin.html" target="_blank" rel="noopener">短视频行业的数据</a> </li>
+<li><a href="https://mp.weixin.qq.com/s/_GSAIJhHILdIlwKRbhkpFQ" target="_blank" rel="noopener">招商证券的电商类报告</a>（电商类的行业观察，企业研究，品牌深度报告，这个很赞）</li>
+<li>排名不分先后</li>
+</ol>
+<h4 id="二，国家机构公开数据"><a href="#二，国家机构公开数据" class="headerlink" title="二，国家机构公开数据"></a><strong>二，国家机构公开数据</strong></h4><ol>
+<li><p><a href="http://www.catr.cn/kxyj/qwfb/qwsj/" target="_blank" rel="noopener">中国信通院-研究成果-权威发布-权威数据</a>国家智能机出货量的官方统计</p>
+</li>
+<li><p><a href="http://www.camet.org.cn/index.php%3Fm%3Dcontent%26c%3Dindex%26a%3Dlists%26catid%3D18" target="_blank" rel="noopener">中国城市轨道交通协会</a>（有中国城市地铁线路的流量数据）</p>
+</li>
+<li><p><a href="http://www.gov.cn/fuwu/" target="_blank" rel="noopener">国家的便民服务查询</a>（包括5A景区list，小微企业名录，法人信用查询，出租车信息查询）</p>
+</li>
+<li><p><a href="http://www.gov.cn/shuju/chaxun/index.htm" target="_blank" rel="noopener">国家宏观经济数据</a>（GDP,CPI，总人口，社会消费品零售总额，粮食产品，PPI，各地区行政规划，各地财政收支等等，分月度季度和年度）部分数据如下 【五星】</p>
+</li>
+<li><p><a href="http://www.stats.gov.cn/tjsj/" target="_blank" rel="noopener">国家统计局</a>（数据多到瞠目结舌，包括年度，季度，国家，国际，年鉴，介乎涵盖所有数据指标和历史）部分数据举例 【五星】</p>
+</li>
+<li><p><a href="https://data.worldbank.org.cn" target="_blank" rel="noopener">世界银行的公开数据库</a>（有健康，农业，公共部部门，人口分布，外债，性别，教育，环境，气候变化，能源，贫困等各种公开数据）</p>
+<p>7，<a href="https://cn.knoema.com/atlas" target="_blank" rel="noopener">世界数据图册</a>（世界和地区统计资料，各国数据，地图，排名）包含的全球的国家公开的数据（可惜的是好像有些数据只更新到2017年）</p>
+<p>8，<a href="http://hao.199it.com/buwei.html" target="_blank" rel="noopener">国家机关部委的公开数据</a>（包括国家发展和改革委员会，教育部，民政部，司法部，财政部，工业和信息化不，交通运输部，文化和旅游部等）</p>
+<p>9，<a href="http://hao.199it.com/opencity.html" target="_blank" rel="noopener">各城市开放数据</a>（包括浙江数据开放网，青岛数据开放网，贵阳数据开放平台，成都数据公开平台，合肥数据开放平台，河南开放数据平台等）</p>
+<p>10，<a href="http://hao.199it.com/hgjj.html" target="_blank" rel="noopener">宏观经济查询数据</a>（包括高校财经信息库，人民网经济数据库，香港统计处，联合国统计司，世界经合组织，欧盟统计局，国际货币基金组织等）</p>
+<p>11，<a href="http://hao.199it.com/fang.html" target="_blank" rel="noopener">房价数据</a>（包括中国房价指数，房价走势，台湾房价行情，北京房价查询，深圳楼盘成交查询等，上海地铁房价，贝壳指数等）</p>
+<p>12，<a href="http://hao.199it.com/auto.html" target="_blank" rel="noopener">汽车数据</a>（包括中国汽车工业协会数据，百度汽车网，易车汽车指数，汽车渠道直通车，中国汽车流通协会数据中心，德国汽车工业协会等）</p>
+</li>
+</ol>
+<h4 id="三，国内互联网公司数据报告网站列表"><a href="#三，国内互联网公司数据报告网站列表" class="headerlink" title="三，国内互联网公司数据报告网站列表"></a><strong>三，国内互联网公司数据报告网站列表</strong></h4><ol>
+<li><a href="http://djt.qq.com/ppts/" target="_blank" rel="noopener">讲座PPT-腾讯大讲堂</a> </li>
+<li><a href="http://www.tencent.com/zh-cn/investor.html" target="_blank" rel="noopener">Tencent 腾讯</a>-业绩报告</li>
+<li><a href="http://mta.qq.com/mta/operation/" target="_blank" rel="noopener">腾讯大数据</a>-腾讯云数据分析出来的行业报告</li>
+<li><a href="http://developer.baidu.com/report%3Ftype%3Dinvestigate" target="_blank" rel="noopener">百度开放服务平台</a>-百度云数据分析出来的行业报告</li>
+<li><a href="http://datamarket.baidu.com/app.html%23app/index" target="_blank" rel="noopener">百度数据研究中心 提供行业研究报告、行业分析报告</a>-百度数据中心报告</li>
+<li><a href="http://www.aliresearch.com/" target="_blank" rel="noopener">首页-阿里研究院</a>-阿里行业研究报告</li>
+<li><a href="http://tech.qq.com/biznext/list.html" target="_blank" rel="noopener">企鹅智酷_腾讯网</a>-腾讯出品行业报告 </li>
+<li><a href="https://cdc.tencent.com/" target="_blank" rel="noopener">腾讯CDC</a> -腾讯交互设计报告</li>
+<li><a href="http://ued.baidu.com/case" target="_blank" rel="noopener">百度用户体验中心</a>-百度UED用户研究报告</li>
+<li><a href="http://gux.163.com/" target="_blank" rel="noopener">网易用户体验设计中心</a>-网易UED用户研究报告</li>
+<li><a href="http://c.youku.com/ykvr/index" target="_blank" rel="noopener">网络视频数据报告</a>-优酷指数行业报告</li>
+<li><a href="http://www.pptv.com/aboutus/download/" target="_blank" rel="noopener">PP指数_PPTV聚力</a>-PPTV指数行业报告</li>
+<li><a href="http://zt.360.cn/report/" target="_blank" rel="noopener">360研究报告_360安全中心</a>-360应用商店等产品出品报告</li>
+</ol>
+<h4 id="四，国外咨询机构网站数据报告列表（国外咨询机构较多，数据详实，无论是海外出海产品，海外报告中多有亚洲和中国的重点研究，相关报告和趋势分析都可以选看）"><a href="#四，国外咨询机构网站数据报告列表（国外咨询机构较多，数据详实，无论是海外出海产品，海外报告中多有亚洲和中国的重点研究，相关报告和趋势分析都可以选看）" class="headerlink" title="四，国外咨询机构网站数据报告列表（国外咨询机构较多，数据详实，无论是海外出海产品，海外报告中多有亚洲和中国的重点研究，相关报告和趋势分析都可以选看）"></a><strong>四，国外咨询机构网站数据报告列表（国外咨询机构较多，数据详实，无论是海外出海产品，海外报告中多有亚洲和中国的重点研究，相关报告和趋势分析都可以选看）</strong></h4><ol>
+<li><a href="http://www.flurry.com/" target="_blank" rel="noopener">Flurry</a>-国外app行业报告</li>
+<li><a href="http://cn.blog.appannie.com/" target="_blank" rel="noopener">App Annie Blog</a>-app指数报告</li>
+<li><a href="https://www.appannie.com/insights/" target="_blank" rel="noopener">https://www.appannie.com/insights/</a> (Appnnie的行业包括，包括app 分发行业的分发量和收入）</li>
+<li><a href="https://intelligence.businessinsider.com/" target="_blank" rel="noopener">BI Intelligence</a>-business insider的报告</li>
+<li><a href="http://www.emarketer.com/Articles" target="_blank" rel="noopener">Today’s Articles on Digital Marketing and Media</a>-emarker的报告</li>
+<li><a href="http://www.newzoo.com/category/press-releases/" target="_blank" rel="noopener">http://www.newzoo.com/category/press-releases/</a>-newzoo侧重于手游行业报告</li>
+<li><a href="http://www.gartner.com/newsroom/archive/" target="_blank" rel="noopener">Gartner Press Release Archives</a>-gartner侧重于硬件的出货量，包括智能机和PC等</li>
+<li><a href="http://www.idc.com/search/geography/perform_.do%3Fpage%3D1%26hitsPerPage%3D25%26sortBy%3DRELEVANCY%26lang%3DEnglish%26srchIn%3DALLRESEARCH%26src%3D%26athrT%3D10%26geo%3D3_332%26cmpT%3D10%26pgT%3D10%26_xpn%3Dfalse" target="_blank" rel="noopener">IDC - Search Results</a>-IDC的硬件出货量全球报告</li>
+<li><a href="http://www.yozzo.com/news-and-information" target="_blank" rel="noopener">Yozzo Telecom News</a> </li>
+<li><a href="https://www.jpmorgan.com/pages/jpmorgan" target="_blank" rel="noopener">J.P. Morgan Home</a>-摩根投行报告</li>
+<li><a href="http://www.tohmatsu.com/view/en_JP/jp" target="_blank" rel="noopener">德勤中国 | 审计, 企业管理咨询, 财务咨询, 风险管理, 税务服务及行业洞察</a> </li>
+<li><a href="http://www.comscore.com/" target="_blank" rel="noopener">Precisely Everywhere</a>-comscore的互联网行业报告</li>
+<li><a href="http://www.ericsson.com/" target="_blank" rel="noopener">Ericsson - A world of communication</a>（Global移动行业报告）</li>
+<li><a href="http://www.gamesindustry.biz/" target="_blank" rel="noopener">GamesIndustry.biz</a>（Global游戏行业报告）</li>
+<li><a href="http://adfonic.com/" target="_blank" rel="noopener">http://adfonic.com/</a>（Global广告行业报告）</li>
+<li><a href="http://www.canalys.com/" target="_blank" rel="noopener">Canalys | Insight. Innovation. Impact.</a>（Global智能机报告）</li>
+<li><a href="http://www.juniperresearch.com/" target="_blank" rel="noopener">Mobile, Online &amp; Digital Market Research, Data &amp; Consultancy</a>（通信无线报告）</li>
+<li><a href="http://www.gfk.com/Pages/default.aspx" target="_blank" rel="noopener">Home | GfK Global</a>（终端比较专业的报告）</li>
+<li><a href="http://www.kantarworldpanel.com/global" target="_blank" rel="noopener">Kantar Worldpanel</a>（主要统计Android和ios的市场份额）</li>
+<li><a href="https://www.pwc.com/us/en/publications.html" target="_blank" rel="noopener">PwC publications</a>（皮尤的所有用户，市场研究报告）</li>
+<li><a href="https://www.fiksu.com/" target="_blank" rel="noopener">Fiksu | Data-fueled mobile marketing</a>（统计app用户获取成本和应用商店下载频次的监测）</li>
+<li><a href="https://www.weforum.org/reports" target="_blank" rel="noopener">https://www.weforum.org/reports</a>（世界经济论坛的报告，揭示国内外发展的大趋势）</li>
+<li><a href="http://blog.jampp.com/insights/" target="_blank" rel="noopener">Insights - Jampp</a> （Jampp是国外的app 的粘性和转化漏洞的网站，在insights里还有行业的app的retention等benchmark的数据，有些类似flurry的行业数据）</li>
+<li><a href="http://www.rolandberger.com.cn/publications/publications_in_Greater_China/industry_reports/index.html" target="_blank" rel="noopener">罗兰贝格行业评论</a> 战略和行业评论和报告</li>
+<li><a href="http://www.pwccn.com/home/chi/libraryindex_chi.html" target="_blank" rel="noopener">普华永道: </a>blog  各个行业的主要发现和行业报告</li>
+<li><a href="https://www.similarweb.com/" target="_blank" rel="noopener">Website Traffic &amp; Mobile App Analytics</a> （similar web 以色列的网站分析工具，可以分析任何网站，包括用户，来源，终端，分布等等，数据非常棒）</li>
+<li><a href="http://www.cadas.com.cn/" target="_blank" rel="noopener">CADAS</a>（全球航空公司研究报告）：非常支持和专业 </li>
+<li><a href="http://www.draphant.com/report" target="_blank" rel="noopener">印度互联网年报 - 竺帆 | 助力中企扬帆天竺</a> （印度出海报告，非常详细）</li>
+<li><a href="https://www.gsma.com/r/mobileeconomy/" target="_blank" rel="noopener">GSMA：</a> 全球移动互联网经济分析报告，全部免费下载报告和数据，从2015年到现在</li>
+</ol>
+<p>排名不分先后</p>
+<h4 id="五，各大公司不定期发布的报告，比如（细分方向的时候用）"><a href="#五，各大公司不定期发布的报告，比如（细分方向的时候用）" class="headerlink" title="五，各大公司不定期发布的报告，比如（细分方向的时候用）"></a><strong>五，各大公司不定期发布的报告，比如（细分方向的时候用）</strong></h4><ol>
+<li><a href="http://www.askci.com/news/chanye/2016/01/20/101053mz1i.shtml" target="_blank" rel="noopener">高德地图：2015年度中国主要城市交通分析报告</a> </li>
+<li><a href="http://tech.qq.com/a/20151216/047691.htm" target="_blank" rel="noopener">微信城市服务发布《2015微信政务民生白皮书》</a> </li>
+<li><a href="http://socialbeta.com/t/report-taobao-consumption-trends-data" target="_blank" rel="noopener">【报告】淘宝发布 2015 中国消费趋势数据，2015 年我们为什么买单？</a> </li>
+<li><a href="https://blog.growingio.com/posts/hu-lian-wang-chuang-ye-gong-si-yong-hu-zeng-zhang-shi-zhan-mi-ji" target="_blank" rel="noopener">互联网增长的第一本数据分析手册</a>-Growing IO的公开手册</li>
+<li><a href="http://blog.talkingdata.net/%3Fp%3D221" target="_blank" rel="noopener">移动游戏运营数据分析指标白皮书（一）</a>-Talkingdata 运营指标分析白皮书</li>
+</ol>
+<h4 id="六，找行业内的人事打听内部一手资料"><a href="#六，找行业内的人事打听内部一手资料" class="headerlink" title="六，找行业内的人事打听内部一手资料"></a><strong>六，找行业内的人事打听内部一手资料</strong></h4><p>1，关注一些专门打听行业内部人事的信息来源</p>
+<ul>
+<li>这里先推荐一家公共号：晚点LatePost（微信搜索公共号可以 关注）</li>
+<li>这家主要是会 看一些行业内部和重要的消息</li>
+</ul>
+<p>2，在行上约人。在行 App</p>
+<ul>
+<li>如果想知道一些企业的信息，可以在在行上找到一些行家，曾经一手经营或者运营过祥光额项目和参与过竞品和行业公司的操盘，可以约出来，从信息和方法论角度获得资讯</li>
+</ul>
+<h4 id="七，企业信息报告"><a href="#七，企业信息报告" class="headerlink" title="七，企业信息报告"></a><strong>七，企业信息报告</strong></h4><ol>
+<li><a href="http://www.chinaipo.com/listed/" target="_blank" rel="noopener">新三板在线 - 中国最大的新三板生态平台</a>（各行各业的新三板上市公司财务数据，高管数据等）</li>
+<li><a href="http://www.qichacha.com/" target="_blank" rel="noopener">企查查|企业查询</a>（查询企业的产品，品牌和法人信息）</li>
+<li><a href="http://www.tianyancha.com/" target="_blank" rel="noopener">企业注册信息查询</a>（天眼查，同企查查）</li>
+<li><a href="https://www.sec.gov/" target="_blank" rel="noopener">SEC.gov | Home</a>（美国上市公司年度财务报告）</li>
+<li><a href="http://www.cninfo.com.cn/new/index" target="_blank" rel="noopener">巨潮资讯网—</a>（中国上市公司季度年度财务报告）</li>
+<li><a href="http://ir.baidu.com/phoenix.zhtml%3Fc%3D188488%26p%3Dirol-irhome" target="_blank" rel="noopener">Baidu | Investors</a>（各大上市公司季度财报，IR.XX公司.com，比如百度这个）</li>
+<li><a href="https://www.tianyancha.com/" target="_blank" rel="noopener">天眼查</a>（可以查到各个企业的详细信息，还可以查到员工个数）</li>
+</ol>
+<p>排名不分先后</p>
+<h4 id="八，爬虫网站或者App的数据"><a href="#八，爬虫网站或者App的数据" class="headerlink" title="八，爬虫网站或者App的数据"></a><strong>八，爬虫网站或者App的数据</strong></h4><p>最近研究发现，还有一个好的行业信息获取来源，就是通过站内或者App内的爬虫抓取，这个渠道获取的数据，通常可以帮助你了解行业和竞品的站内使用情况，用户喜欢的内容，用户的分布，用户的行为和喜好等等。</p>
+<p>爬虫，简单来说是通过程序来获取网页的信息，整理成数据库，从而进行数据挖掘的得到分析结论的过程。比如你可以爬虫购物的页面，知道哪个商品的销量好，比如你可以爬虫小红书的页面，知道哪些kol收到欢迎，你还可以爬取他们的分类，知道美妆和购物的kol表现好，并且有多少个这样的kol。如果你没有对方的数据库权限（当然你肯定没有），那么从外部爬虫是最好的了解他们业务数据的方式。</p>
+<p>比如通过爬虫b站和知乎，可以知道粉丝top的人，比如这个</p>
+<p><a href="https://zhuanlan.zhihu.com/p/128515599" target="_blank" rel="noopener">曹婷婷：知乎和B站粉丝最多的1000人都是谁？zhuanlan.zhihu.com</a></p>
+<ul>
+<li>1，通常的搜索方式 是：你要了解的网站/App+爬虫，在搜索平台比如百度搜索</li>
+<li>2，这里举例一些程序员垂直的网站，</li>
+<li><a href="https://www.csdn.net/" target="_blank" rel="noopener">CSDN网站</a>：在这个网站内搜索：网站/app +爬虫 这个关键词，在站内搜索</li>
+<li><a href="https://www.jianshu.com/" target="_blank" rel="noopener">简书 - 创作你的创作</a>：在这个网站内搜索：网站/app +爬虫 这个关键词，在站内搜索，</li>
+<li><a href="http://jiasule.v2ex.com/" target="_blank" rel="noopener">V2EX</a>：在这个网站内搜索：网站/app +爬虫 这个关键词，在站内搜索</li>
+<li><a href="https://juejin.im/" target="_blank" rel="noopener">掘金</a>：在这个网站内搜索：网站/app +爬虫 这个关键词，在站内搜索</li>
+<li>排名不分先后</li>
+</ul>
+<h4 id="九，各种业内微信群"><a href="#九，各种业内微信群" class="headerlink" title="九，各种业内微信群"></a><strong>九，各种业内微信群</strong></h4><p>现在发现很多好的内部报告和难以获得报告，是通过加入一些干货群，内部群来获得的。</p>
+<p>比如做直播电商的人自己比较关注一些直播和电商带货的详细的数据和报告趋势，大家会自己组建一些干货群，只要是市面上有的报告，自己内部发现的都会往里面扔。</p>
+<p>这个是淘宝直播的负责人赵圆圆离开淘宝后创业，同时聚集的几个群，里面关于直播的干货非常多。</p>
+<p>其他的关于投资的，趋势，创业的类似群也很多，获取报告也很一手，大家也可以自己开发下这样的群组织。</p>
+<h4 id="十，学会使用搜索引擎"><a href="#十，学会使用搜索引擎" class="headerlink" title="十，学会使用搜索引擎"></a><strong>十，学会使用搜索引擎</strong></h4><p>搜索引擎还是可以搜到很多你个性化想要找的报告和趋势。以前我没觉得搜索引擎很很难，后来发现也需要学习和熟练使用，才能让其为自己所用。</p>
+<p>这个回答里有详细展开</p>
+<p><a href="https://www.zhihu.com/question/28013848/answer/1091547644" target="_blank" rel="noopener">如何高效地使用搜索引擎？www.zhihu.com<img src="https://zhstatic.zhihu.com/assets/zhihu/editor/zhihu-card-default.svg" alt="图标"></a></p>
+<h4 id="十一，各大公司的财报"><a href="#十一，各大公司的财报" class="headerlink" title="十一，各大公司的财报"></a><strong>十一，各大公司的财报</strong></h4><p>通常对于上市公司来说，财报信息包含的内容是最全面的，关于用户，商业，渠道，增长，业务策略等等。所以如果想了解一个公司，如果是上市公司最好第一手先看财报后者SEC（上市报告）。</p>
+<p>很多同学问我财报哪里找，不知道怎么看。其实每个公司都有自己的IR（投资者页面），在上面有财报的完整的pdf下载。另外，也推荐大家听听每期的企业conference call（回答财报问题），可以听下CEO对财报的解读。</p>
+<p>这里我列举几个大公司财报的网站</p>
+<ul>
+<li><a href="https://www.wind.com.cn/NewSite/edb.html" target="_blank" rel="noopener">wind</a>：金融数据库，包含财报和行业信息（wind的账号可以到闲鱼租）</li>
+<li>百度财报 PDF：<a href="http://ir.baidu.com/phoenix.zhtml%3Fc%3D188488%26p%3Dirol-irhome" target="_blank" rel="noopener">Baidu | Investors | Home</a></li>
+<li><a href="http://ir.baidu.com/phoenix.zhtml%3Fc%3D188488%26p%3Dirol-presentations" target="_blank" rel="noopener">百度财报解读podcast</a>：音频可以在线听</li>
+<li>阿里财报pdf：<a href="https://www.alibabagroup.com/cn/ir/earnings" target="_blank" rel="noopener">阿里巴巴集团</a></li>
+<li>腾讯财报pdf：<a href="http://www.tencent.com/zh-cn/investor.html" target="_blank" rel="noopener">Tencent 腾讯 - 投资者关系</a></li>
+<li>搜狐财报pdf：<a href="http://investors.sohu.com/" target="_blank" rel="noopener">http://investors.sohu.com/</a></li>
+<li>拼多多pdf：<a href="http://investor.pinduoduo.com/news-releases" target="_blank" rel="noopener">Investor Relations | Pinduoduo Inc.</a></li>
+<li><a href="https://edge.media-server.com/m6/p/sgasimfp" target="_blank" rel="noopener">拼多多财报解读</a>：音频可以在线听。</li>
+</ul>
+<p>如果大家有自己想要了解的公司，在百度or google搜索：公司名字+IR ，可以 定位到他们公司的财报网站页面。在页面上找到conference call或者webcast，可以 找到他们的财报解读音频。</p>
+<h4 id="十二，投资机构的统计网站（创业方向选择，投融资选择的时候用）"><a href="#十二，投资机构的统计网站（创业方向选择，投融资选择的时候用）" class="headerlink" title="十二，投资机构的统计网站（创业方向选择，投融资选择的时候用）"></a><strong>十二，投资机构的统计网站（创业方向选择，投融资选择的时候用）</strong></h4><ol>
+<li><a href="https://www.itjuzi.com/" target="_blank" rel="noopener">IT桔子 | IT互联网公司产品数据库及商业信息服务</a>（IT桔子，中国创业公司投融资数据和报告）</li>
+<li><a href="https://www.chinaventure.com.cn/cmsmodel/report/list.shtml" target="_blank" rel="noopener">研究院_ChinaVenture投资中国网</a>-（投中的每个季度的行业融资报告，不定期有专项分析报告）</li>
+<li><a href="https://www.cbinsights.com/blog/" target="_blank" rel="noopener">CB Insights - Blog</a> （CBI insights的一系列产品，包括公司的估值，独角兽公司列表等）</li>
+<li><a href="https://www.cbinsights.com/research-downround-tracker" target="_blank" rel="noopener">The Downround Tracker</a>（公司估值下降的趋势）</li>
+<li><a href="https://www.cbinsights.com/research-unicorn-companies" target="_blank" rel="noopener">The Complete List of Unicorn Companies</a>（独角兽公司列表）</li>
+<li><a href="http://www.renaissancecapital.com/ipohome/marketwatch.aspx" target="_blank" rel="noopener">IPO Center: IPO Market, IPO News, IPO Calendars, IPO Pricings, IPO Voting</a>（IPO相关新闻和趋势报告）</li>
+<li><a href="http://www.privco.com/dashboard" target="_blank" rel="noopener">PrivCo | Private Company Financial Intelligence</a>（美国金融数据公司，主要关注未上市公司的所有投融资资料，目前涵盖的公司包括全世界，当然也包括中国公司）</li>
+<li>券商<a href="http://data.eastmoney.com/report/hyyb.html%23dHA9MCZjZz0wJmR0PTImaHk9NDQ3JnBhZ2U9MQ%3D%3D" target="_blank" rel="noopener">行业研究报告</a> （国内券商的行业报告，策略报告，可以筛选行业，筛选报告类型）</li>
+<li><a href="https://pitchbook.com/news/reports" target="_blank" rel="noopener">https://pitchbook.com/news/reports</a>（PitchBook的PE,VC，M&amp;A行业报告）</li>
+<li><a href="http://www.chinaventure.com.cn/cmsmodel/report/study/count/list.shtml" target="_blank" rel="noopener">研究院_ChinaVenture投资中国网</a> （IPO 投融资行业报告）</li>
+<li><a href="http://www.dowjones.com/press-room/dow-jones-venturesource-2q16-u-s-venture-capital-report/" target="_blank" rel="noopener">Dow Jones VentureSource 2Q’16 U.S. Venture Capital Report</a>（道琼斯旗下机构Dow Jones LP Source行业投资报告）</li>
+<li>NVCA <a href="http://nvca.org/research/venture-investment/" target="_blank" rel="noopener">Venture Investment</a>（美国国家风险投资协会，每个季度和年度都会出投融资行业报告）</li>
+<li>PWC-<a href="https://www.pwcmoneytree.com/" target="_blank" rel="noopener">MoneyTree Home</a>（PWC的money tree report是每个季度美国的风险投资行业报告）</li>
+<li><a href="https://home.kpmg.com/xx/en/home/insights.html" target="_blank" rel="noopener">https://home.kpmg.com/xx/en/home/insights.html</a> （KPMG毕马威的insights报告，一般是每个季度的创投趋势，比较细致的分析）</li>
+<li><a href="https://mattermark.com//" target="_blank" rel="noopener">Mattermark - Discover, Enrich, &amp; Analyze Companies</a>（创业公司投资并购信息一站式搜索）</li>
+<li><a href="http://pitchbook.com/" target="_blank" rel="noopener">M&amp;A, Private Equity &amp; Venture Capital Database</a>（创业公司投资并购信息一站式搜索）</li>
+<li><a href="http://www.datafox.com/" target="_blank" rel="noopener">DataFox | Prospect Sales Leads with Company Signals</a>（创业公司投资并购信息一站式搜索）</li>
+<li><a href="https://www.crunchbase.com/%23/home/index" target="_blank" rel="noopener">CrunchBase accelerates innovation by bringing together data on companies and the people behind them.</a>（创业公司数据库）</li>
+<li><a href="http://www.ventureintelligence.com/" target="_blank" rel="noopener">Venture Intelligence</a> PE/VC database</li>
+<li><a href="https://seekingalpha.com/" target="_blank" rel="noopener">Stock Market Insights | Seeking Alpha</a> （二级市场金融分析网站）</li>
+<li><a href="http://www.trefis.com/modeldemo/institutional/22340/Qpiyk/0700.HK%3FeasyAccessToken%3DPROVIDER_cf15b6285eebd7b94e7c2aa257b8c75161ce8a8c" target="_blank" rel="noopener">Tencent Holdings Ltd – Trefis</a>（各个公司的revenue model的预测和key driver的趋势，这个网站简直不能再棒）</li>
+</ol>
+<p>排名不分先后</p>
+<h4 id="十三，本地数据库"><a href="#十三，本地数据库" class="headerlink" title="十三，本地数据库"></a><strong>十三，本地数据库</strong></h4><p>这个世界有很多有用的信息，搜索引擎只解决了其中20%，其他80%的信息再各个角落，包括微信群，包括口口，甚至包括直播里都有，但是都不在搜索引擎。</p>
+<p>就搜索引擎而言，现在很多人只是使用了其中的5%还不到。搜索引擎的技巧可以提升，但是其他80%的信息获取渠道更为隐蔽和无法公开获得的。</p>
+<p>我加了很多 群，里面都是这些报告和信息和各行各业的各种信息，这些是搜索引擎提供不了的</p>
+<p>这些冰山下的信息才决定了信息的获取的不同和优质与否。</p>
+<p>除了上述渠道外，能找到靠谱渠道，找到合适的报告随时存储起来，等用的时候随手打开用是最好的。分享一个我最近看的收藏的精品的报告收藏夹，也希望对你们有用（随时更新）</p>
+<p>作者：曹婷婷<br>链接：<a href="https://www.zhihu.com/question/19766160/answer/92693568" target="_blank" rel="noopener">https://www.zhihu.com/question/19766160/answer/92693568</a><br>来源：知乎</p>
+<h4 id="一、国家数据"><a href="#一、国家数据" class="headerlink" title="一、国家数据"></a>一、国家数据</h4><p><strong>1、<a href="http://www.gov.cn/shuju/chaxun/index.htm" target="_blank" rel="noopener">国家宏观经济数据</a></strong>，主页就能看见社会消费品零售总额数据，想要及时又权威的数据，在这可以找到</p>
+<p><strong>2、<a href="http://www.stats.gov.cn/" target="_blank" rel="noopener">国家统计局</a></strong>，准确又权威</p>
+<h4 id="二、咨询机构"><a href="#二、咨询机构" class="headerlink" title="二、咨询机构"></a>二、咨询机构</h4><p><strong>3、</strong> <strong><a href="https://www2.deloitte.com/cn/zh.html" target="_blank" rel="noopener">德勤</a>：</strong>四大之一，德勤出具的审计报告，是质量等级非常高</p>
+<p><strong>4、</strong> <strong><a href="http://www.199it.com/" target="_blank" rel="noopener">199IT互联网数据中心</a>：</strong>各行各业，种类齐全</p>
+<p><strong>5、<a href="http://www.talkingdata.com/" target="_blank" rel="noopener">TalkingData</a>，</strong>质量数量两开花</p>
+<p><strong>6、 <a href="https://www.rolandberger.com/zh/%3Fcountry%3DCN" target="_blank" rel="noopener">罗兰贝格行业评论</a>，</strong>知名营销资讯公司，聚焦消费品和零售方面，相关的报告质量也比较高</p>
+<p><strong>7、<a href="https://www.iresearch.cn/" target="_blank" rel="noopener">艾瑞研究-艾瑞网</a>：</strong>艾瑞的咨询主要集中在互联网方面，一般我会选择在pc端使用艾媒，功能更强大~</p>
+<p><strong>8、<a href="https://www.analysys.cn/" target="_blank" rel="noopener">易观（易观智库）</a>：</strong>易观的优点在于除了报告，还会有很多的分析，有需要的同学看可以根据他的分类挑选自己想要的内容</p>
+<p><strong>9、<a href="http://www.aliresearch.com/" target="_blank" rel="noopener">阿里研究院-阿里行业研究报告</a>：</strong>阿里巴巴就不用多说了，依托他的阿里研究院里的海量数据，总有你需要的</p>
+<p><strong>10、<a href="https://www.nielsen.com/ssa/en/" target="_blank" rel="noopener">尼尔森</a>：</strong>本身就是一家全球知名的市场监测和数据分析公司，想要了解市场动态可以看看</p>
+<p><strong>11、<a href="https://www.caasdata.com/" target="_blank" rel="noopener">卡思数据</a>：</strong>短视频目前有多火，大家有目共睹。而卡思就是这样一个分析短视频数据的网站，市面上比较火的短视频app都有包含在内。</p>
+<p><strong>12、<a href="https://www.bcg.com/zh-cn/default.aspx" target="_blank" rel="noopener">波士顿咨询</a>：</strong>你知道“波士顿矩阵”吗？就是这家公司提出的，他们也是全球性的行业洞察，但可能对你的英文水平提出了一点要求。</p>
+<h4 id="三、行业协会-行业媒体网站-学术论坛"><a href="#三、行业协会-行业媒体网站-学术论坛" class="headerlink" title="三、行业协会/行业媒体网站/学术论坛"></a><strong>三、行业协会/行业媒体网站/学术论坛</strong></h4><p><strong>13、<a href="http://www.ccfa.org.cn/portal/cn/index.jsp" target="_blank" rel="noopener">中国经营连锁协会CCFA</a>，</strong>是连锁经营领域唯一的全国性行业组织，经常发布一些行业资讯和报告</p>
+<p><strong>14、<a href="http://www.linkshop.com.cn/" target="_blank" rel="noopener">联商网</a>，</strong>专注零售行业提供多方面的服务，对于零售行业来说也是最大的商机平台和互动社区</p>
+<p><strong>15、</strong> <strong><a href="http://www.ccagm.org.cn/" target="_blank" rel="noopener">中国百货商业协会 CCAGM</a>，</strong>聚焦百货零售行业的研究</p>
+<p><strong>16、<a href="https://36kr.com/" target="_blank" rel="noopener">36氪</a>：</strong>如果你是创业者，又想找准确还保持中立客观的信息，36氪一定是你最好的选择。另外36氪上也有不少独家信息~</p>
+<p><strong>17、<a href="http://www.ebrun.com/" target="_blank" rel="noopener">亿邦动力</a>：</strong>亿邦动力主打电商，在电子商务行业拥有很大的影响力，中小企业可以多加参考</p>
+<p><strong>18、<a href="https://www.iyiou.com/" target="_blank" rel="noopener">亿欧</a>：</strong>亿欧的重点在于突出一个“新”字，不管你是新科技还是新理念新政策，在亿欧都能看到相关的报告。除此之外，也可以探讨一些行业热点话题。</p>
+<p><strong>19、<a href="https://www.tmtpost.com/" target="_blank" rel="noopener">钛媒体</a>：</strong>是TMT领域最大的信息入口和交流平台，也是国内的一个主流平台，有志于投融资可以收藏这家啦。</p>
+<h4 id="四、百度云积累"><a href="#四、百度云积累" class="headerlink" title="四、百度云积累"></a>四、百度云积累</h4><p><em>链接:</em>:<a href="https://pan.baidu.com/s/1jpnMo2BwTExFcvWk8MnR7g" target="_blank" rel="noopener">https://pan.baidu.com/s/1jpnMo2BwTExFcvWk8MnR7g</a></p>
+<p><em>提取码: hdfy</em></p>
+<p>作者：神秘奶歌玩家<br>链接：<a href="https://www.zhihu.com/question/19766160/answer/1171807778" target="_blank" rel="noopener">https://www.zhihu.com/question/19766160/answer/1171807778</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/" class="post-title-link" itemprop="url">互联网中搜索大数据（一）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 10:33:27" itemprop="dateCreated datePublished" datetime="2020-07-02T10:33:27+08:00">2020-07-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>转载来自：<a href="https://www.zhihu.com/question/27692329/answer/852165031" target="_blank" rel="noopener">https://www.zhihu.com/question/27692329/answer/852165031</a></p>
+<hr>
+<h2 id="金融财经数据"><a href="#金融财经数据" class="headerlink" title="金融财经数据"></a>金融财经数据</h2><ol>
+<li><a href="http://data.10jqka.com.cn/" target="_blank" rel="noopener">同花顺数据中心</a>：提供股票债券等金融数据</li>
+<li><a href="http://data.hexun.com/" target="_blank" rel="noopener">和讯数据</a>：提供各种股票、基金、外汇、债券等实时数据，有付费，有免费</li>
+<li><a href="https://www.01caijing.com/data/index.htm" target="_blank" rel="noopener">零壹财经</a>：大大小小的网贷数据、排行榜等</li>
+<li><a href="http://dc.xinhua08.com/" target="_blank" rel="noopener">金融数据网</a>：提供每日的黄金、汇率、农产品、汽油价格的相关数据</li>
+<li><a href="https://robo.datayes.com/v2/home" target="_blank" rel="noopener">萝卜投研</a>：提供股市、证券等数据，多以数据研究报告形式展示</li>
+<li><a href="http://www.jrj.com.cn/" target="_blank" rel="noopener">金融界</a>：提供股市、融资等各种资金流向数据，以及丰富的财报和研报</li>
+<li><a href="http://www.eastmoney.com/" target="_blank" rel="noopener">东方财富网</a>：提供多国的股票、财税、行业、消费等大量丰富的经济数据</li>
+<li><a href="https://www.51test.net/jinrong/jilin/jilin/" target="_blank" rel="noopener">吉林金融网</a>：提供吉林的融资、市场数据</li>
+<li><a href="http://q.stock.sohu.com/zs/000001/index.shtml" target="_blank" rel="noopener">搜狐证券</a>：提供货币、外汇、行业、市场等宏观数据</li>
+<li><a href="http://www.wisers.com.cn/finance" target="_blank" rel="noopener">CCER经济金融数据库</a>：提供企业财务年度数据、股票收益数据等数据库下载</li>
+<li><a href="https://www.hkma.gov.hk/chi/" target="_blank" rel="noopener">香港金融管理局</a>：提供香港的各种经济及金融数据，以宏观数据为主</li>
+<li><a href="http://www.wefore.com/show-model3-7.html" target="_blank" rel="noopener">世纪未来</a>：数据服务平台，提供银行业务研究、金融大数据等各种付费数据</li>
+<li><a href="http://finance.sina.com.cn/mac/" target="_blank" rel="noopener">新浪财经</a>：提供国内国民经济、行业信息、对外经贸、居民收入等各种宏观的经济数据</li>
+<li><a href="https://www.ceicdata.com/zh-hans" target="_blank" rel="noopener">司尔亚司数据信息有限公司</a>：覆盖超过195+个国家的经济数据库，数据全面但收费</li>
+<li><a href="https://www.insee.fr/en/accueil" target="_blank" rel="noopener">INSEE数据</a>：法国统计与经济研究院公开数据</li>
+<li><a href="https://www.chinaventure.com.cn/cmsmodel/report/list.shtml" target="_blank" rel="noopener">投中研究院</a>：提供投资领域的分析报告，网站更新频率较高</li>
+</ol>
+<h2 id="互联网数据"><a href="#互联网数据" class="headerlink" title="互联网数据"></a>互联网数据</h2><p><strong>营销查询：</strong></p>
+<ol>
+<li><a href="https://www.5118.com/" target="_blank" rel="noopener">5118</a> / <a href="http://tool.chinaz.com/" target="_blank" rel="noopener">chinaz</a>：支持查询网站排名及发展趋势、百度收录情况等信息</li>
+<li><a href="http://index.baidu.com/v2/index.html/" target="_blank" rel="noopener">百度指数</a>：百度旗下/以百度网民行为数据为基础的数据分享平台，支持查询需求图谱</li>
+<li>微信指数：微信旗下/基于微信大数据分析的移动端指数，打开微信→搜索“微信指数”可用</li>
+<li><a href="http://mi.talkingdata.com/" target="_blank" rel="noopener">移动观象台</a>：基于移动设备用户的操作行为，提供应用、公众号排行等，以及大量数据报告</li>
+<li><a href="https://www.newrank.cn/public/info/list.html" target="_blank" rel="noopener">新榜</a>/<a href="https://data.wxb.com/rank" target="_blank" rel="noopener">微小宝</a>/易赞：几款工具比较类似，支持查看公众号排行、看公众号人群画像等功能</li>
+<li><a href="http://index.1688.com/" target="_blank" rel="noopener">阿里指数</a>：阿里旗下/反映淘宝平台市场动向的数据分析平台</li>
+</ol>
+<p><strong>报告分析：</strong></p>
+<ol>
+<li><a href="http://www.199it.com/archives/tag/%E6%98%93%E8%A7%82%E6%99%BA%E5%BA%93" target="_blank" rel="noopener">易观智库</a>：199IT导航的母网站，权威的互联网数据平台，涵盖战略新兴产业、电商互联网、共享经济、社交营销、移动互联网以及其他互联网服务的数据及分析报告</li>
+<li><a href="http://www.iresearch.cn/" target="_blank" rel="noopener">艾瑞网</a>：高频率更新互联网前沿的新闻资讯、分析报告，旗下包括艾瑞指数、艾瑞咨询等</li>
+<li><a href="https://www.iimedia.cn/%23shuju" target="_blank" rel="noopener">艾媒网</a>：艾媒与艾瑞无关，艾媒网发布的研究报告多偏向移动互联网方向</li>
+<li><a href="https://www.cbndata.com/report" target="_blank" rel="noopener">CBNDdata</a>：以阿里巴巴的商业数据库为基础，输出产业经济分析报告</li>
+<li><a href="http://www.questmobile.com.cn/blog.html" target="_blank" rel="noopener">QuestMobile</a>：周期性地发布一些关于APP的研究报告</li>
+<li><a href="http://www.aliresearch.com/blog/index/lists/tag/3831.html" target="_blank" rel="noopener">阿里研究院</a>：阿里旗下/发布研究电商等方向趋势的数据报告，内容多与阿里相关</li>
+<li><a href="http://zt.360.cn/report/" target="_blank" rel="noopener">360研究报告</a>：360旗下/移动、PC、网站、企业、诈骗等安全领域的研究，以及大数据等非安全领域的研究</li>
+<li><a href="http://www.cnnic.net.cn/hlwfzyj/" target="_blank" rel="noopener">中国互联网信息研究中心</a>：经国家主管部门批准组建的管理和服务机构，经常发布一些有价值的互联网信息报告</li>
+<li><a href="http://www.caict.ac.cn/kxyj/qwfb/bps/" target="_blank" rel="noopener">中国信通院</a>：针对互联网多个行业的发展趋势，发布白皮书，角度较为宏观</li>
+<li><a href="http://www.cnidp.cn/" target="_blank" rel="noopener">中国互联网数据平台</a>：提供全国各地区互联网发展报告、基础数据及研究分析报告，数据及报告偏向学术性研究</li>
+<li><a href="http://www.gsdata.cn/" target="_blank" rel="noopener">清博大数据</a>：提供微信、微博、头条榜单数据，各种研究报告、数据报告、舆情报告及行业热点</li>
+<li><a href="http://www.cbdio.com/" target="_blank" rel="noopener">数据观</a>：丰富的前沿行业资讯，及部分研究报告下载</li>
+<li><a href="https://data.qq.com/" target="_blank" rel="noopener">腾讯大数据</a>：数据服务平台，提供调查研究、移动互联网及特色数据报告，质量较高</li>
+<li><a href="http://www.thebigdata.cn/" target="_blank" rel="noopener">大数据世界</a>：提供大数据相关资讯、应用案例、技术方案及资料下载</li>
+</ol>
+<h2 id="地理数据"><a href="#地理数据" class="headerlink" title="地理数据"></a><strong>地理数据</strong></h2><p><strong>水土气候数据：</strong></p>
+<ol>
+<li>水土保持生态建设网<a href="http://www.swcc.org.cn/" target="_blank" rel="noopener">http://www.swcc.org.cn/</a></li>
+<li>黄河风情<a href="http://www.yellowriver.org/" target="_blank" rel="noopener">http://www.yellowriver.org/</a></li>
+<li>黄河流域数据中心<a href="http://henu.geodata.cn/index.jsp" target="_blank" rel="noopener">http://henu.geodata.cn/index.jsp</a></li>
+<li>黄土高原水土保护数据库<a href="http://www.loess.csdb.cn/" target="_blank" rel="noopener">http://www.loess.csdb.cn/</a></li>
+<li>数字黑河<a href="http://heihe.westgis.ac.cn/Default.aspx%3Ftabid%3D106" target="_blank" rel="noopener">http://heihe.westgis.ac.cn/Default.aspx?tabid=106</a></li>
+<li>大气科学数据库<a href="http://data.iap.ac.cn/" target="_blank" rel="noopener">http://data.iap.ac.cn/</a></li>
+<li>中国气象科学数据<a href="http://cdc.cma.gov.cn/" target="_blank" rel="noopener">http://cdc.cma.gov.cn/</a></li>
+<li>中国气象科学数据共享服务网<a href="http://cdc.cma.gov.cn/" target="_blank" rel="noopener">http://cdc.cma.gov.cn/</a></li>
+<li>全球森林土地覆盖动态<a href="http://www.fao.org/gtos/gofc-gold/" target="_blank" rel="noopener">http://www.fao.org/gtos/gofc-gold/</a> </li>
+<li>FRA 2000<a href="http://edcsns17.cr.usgs.gov/glcc/fao/index.html" target="_blank" rel="noopener">http://edcsns17.cr.usgs.gov/glcc/fao/index.html</a>全球森林资源</li>
+<li>NOAA<a href="http://www.noaa.gov/" target="_blank" rel="noopener">http://www.noaa.gov/</a>美国国家海洋和大气管理局</li>
+<li>NCDC <a href="http://lwf.ncdc.noaa.gov/oa/ncdc.html%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%B0%94%E5%80%99%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83" target="_blank" rel="noopener">http://lwf.ncdc.noaa.gov/oa/ncdc.html美国国家气候数据中心</a></li>
+<li>国际水管理研究所<a href="http://www.iwmidsp.org/iwmi/info/main.asp" target="_blank" rel="noopener">http://www.iwmidsp.org/iwmi/info/main.asp</a></li>
+<li>气候研究所<a href="http://www.cru.uea.ac.uk/" target="_blank" rel="noopener">http://www.cru.uea.ac.uk/</a></li>
+<li>植被覆盖数据<a href="http://www.vgt.vito.be/" target="_blank" rel="noopener">http://www.vgt.vito.be/</a></li>
+</ol>
+<p><strong>环境数据：</strong></p>
+<ol>
+<li>黄土区农业与生态环境数据分中心<a href="http://loess.geodata.cn/" target="_blank" rel="noopener">http://loess.geodata.cn/</a></li>
+<li>东北黑土农业生态数据库<a href="http://www.blackland.csdb.cn/default.asp" target="_blank" rel="noopener">http://www.blackland.csdb.cn/default.asp</a></li>
+<li>中国西部环境与生态科学数据中心<a href="http://westdc.westgis.ac.cn/" target="_blank" rel="noopener">http://westdc.westgis.ac.cn/</a></li>
+<li>西部数据中心<a href="http://westdc.westgis.ac.cn/data" target="_blank" rel="noopener">http://westdc.westgis.ac.cn/data</a></li>
+<li>黄土高原区域数据共享运行服务中心<a href="http://loess.geodata.cn/Portal/%3FisCookieChecked%3Dtrue" target="_blank" rel="noopener">http://loess.geodata.cn/Portal/?isCookieChecked=true</a></li>
+</ol>
+<p><strong>遥感数据：</strong></p>
+<ol>
+<li>地面站RS地图查询<a href="http://cs.rsgs.ac.cn/cs_cn/query/query_map.asp" target="_blank" rel="noopener">http://cs.rsgs.ac.cn/cs_cn/query/query_map.asp</a></li>
+<li>甘肃省基础地理信息中心<a href="http://www.cehuiju.gansu.gov.cn/5chcg/giscenter.asp" target="_blank" rel="noopener">http://www.cehuiju.gansu.gov.cn/5chcg/giscenter.asp</a></li>
+<li>遥感数据网络资源<a href="http://ecology.bnu.edu.cn/gejp/student/zhj/webresource.htm" target="_blank" rel="noopener">http://ecology.bnu.edu.cn/gejp/student/zhj/webresource.htm</a></li>
+<li>中国遥感数据网<a href="http://ids.ceode.ac.cn/" target="_blank" rel="noopener">http://ids.ceode.ac.cn/</a></li>
+<li>GLCF <a href="http://glcf.geodata.cn/etm/Welcome.do" target="_blank" rel="noopener">http://glcf.geodata.cn/etm/Welcome.do</a></li>
+<li>GIS FORUM <a href="http://www.gisforum.net/%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E7%9A%84GIS%E4%B8%AD%E6%96%87%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99" target="_blank" rel="noopener">http://www.gisforum.net/全球最大的GIS中文门户网站</a></li>
+<li>遥感数据共享<a href="http://ids.ceode.ac.cn/" target="_blank" rel="noopener">http://ids.ceode.ac.cn/</a></li>
+</ol>
+<p><strong>其他自然人文数据：</strong></p>
+<ol>
+<li>地理国情监测云平台 <a href="http://www.dsac.cn/" target="_blank" rel="noopener">http://www.dsac.cn/</a></li>
+<li>中国资源卫星应用中心 <a href="http://www.cresda.com/cn/profile.htm" target="_blank" rel="noopener">http://www.cresda.com/cn/profile.htm</a></li>
+<li>中国自然资源数据库 <a href="http://www.data.ac.cn/index.asp" target="_blank" rel="noopener">http://www.data.ac.cn/index.asp</a></li>
+<li>中国科学院资源环境科学数据中心 <a href="http://www.resdc.cn/resdc/first.asp" target="_blank" rel="noopener">http://www.resdc.cn/resdc/first.asp</a></li>
+<li>中国地球系统科学数据共享网 <a href="http://www.geodata.cn:8086/Metadata/index.jsp" target="_blank" rel="noopener">http://www.geodata.cn:8086/Metadata/index.jsp</a></li>
+<li>国家地球系统科学数据共享服务平台 <a href="http://www.geodata.cn/" target="_blank" rel="noopener">http://www.geodata.cn/</a></li>
+<li><a href="http://pm25.in/" target="_blank" rel="noopener">PM25.in | PM2.5(细颗粒物)及空气质量指数(AQI)实时查询！</a>：中国空气质量监测实时数据<a href="http://pm25.in/" target="_blank" rel="noopener">http://pm25.in/</a></li>
+<li>国际科学数据服务平台 <a href="http://datamirror.csdb.cn/index.jsp" target="_blank" rel="noopener">http://datamirror.csdb.cn/index.jsp</a></li>
+<li>原始数据搜索 <a href="https://wist.echo.nasa.gov/api" target="_blank" rel="noopener">https://wist.echo.nasa.gov/api</a></li>
+<li>中国科学院资源环境科学数据中心 <a href="http://www.resdc.cn/resdc/first.asp" target="_blank" rel="noopener">http://www.resdc.cn/resdc/first.asp</a></li>
+<li>世界聚集人口数据 <a href="http://beta.sedac.ciesin.columbia.edu/gpw/index.jsp" target="_blank" rel="noopener">http://beta.sedac.ciesin.columbia.edu/gpw/index.jsp</a></li>
+<li>光谱数据分析网站 <a href="http://modis.gsfc.nasa.gov/" target="_blank" rel="noopener">http://modis.gsfc.nasa.gov/</a></li>
+<li>美国航空航天局NASA <a href="http://daac.gsfc.nasa.gov/" target="_blank" rel="noopener">http://daac.gsfc.nasa.gov/</a></li>
+<li>城市轨道交通<a href="http://www.ntsg.umt.edu/" target="_blank" rel="noopener">http://www.ntsg.umt.edu/</a></li>
+<li>人地系统主题数据库<a href="http://webpanda.iis.u-tokyo.ac.jp/" target="_blank" rel="noopener">http://webpanda.iis.u-tokyo.ac.jp/</a></li>
+</ol>
+<p><strong>影像数据：</strong></p>
+<ol>
+<li><a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">USGS Earth Explorer</a>：提供Landsat、MODIS等数据</li>
+<li><a href="https://scihub.copernicus.eu/dhus/%23/home" target="_blank" rel="noopener">ESA’s Sentinel Mission</a>：提供Sentinel系列卫星数据，可以下载欧洲航天局所属的影像数据</li>
+<li><a href="https://www.avl.class.noaa.gov/saa/products/welcome%3Bjsessionid%3DFFC5D89936910E14B9D9220EC684138C" target="_blank" rel="noopener">NOAA CLASS</a>：提供高品质大气数据集，包括美国国防部（DoD）、极地作战环境卫星（POES）、NOAA的地球静止环境卫星（GOES）以及其他派生数据</li>
+<li><a href="https://reverb.echo.nasa.gov/reverb/%23utf8%3D%E2%9C%93%26spatial_map%3Dsatellite%26spatial_type%3Drectangle" target="_blank" rel="noopener">NASA Reverb</a>：提供多种类数据，包括：Aqua, Terra, Aura, TRMM, Calipso, NASA DC, JASON, ENVISAT等</li>
+<li><a href="https://earth.esa.int/web/guest/eoli-sa-dismissed%3Bjsessionid%3D40706D0F248CFB22BEFC95C0839A693C.jvm2" target="_blank" rel="noopener">EOLi</a>：欧洲航天局的地球观测目录和订购服务的客户，通过Java 程序下载数据，支持的数据包括：Envisat, ERS, IKONOS, DMC, ALOS, SPOT, Kompsat, Proba, IRS, SCISAT.</li>
+<li><a href="http://www.dgi.inpe.br/CDSR/" target="_blank" rel="noopener">INPE</a>：提供中巴资源卫星数据</li>
+<li><a href="https://bhuvan-app3.nrsc.gov.in/data/download/index.php" target="_blank" rel="noopener">Bhuvan Indian Geo-Platform of ISRO</a>：提供印度境内的MS-1， Cartosat,，OceanSat and ResourceSat数据以及全球的NVDI数据、南亚国家的CartoDem Version -3R1数据和北印度洋的气候数据</li>
+</ol>
+<p><strong>政府数据</strong></p>
+<ol>
+<li><a href="https://data.gov.sg/" target="_blank" rel="noopener">新加坡政府公开数据</a>：提供新加坡各类数据</li>
+<li><a href="https://www.data.gov/" target="_blank" rel="noopener">美国政府公开数据</a>：提供美国全国各类数据</li>
+<li><a href="https://www.data.gouv.fr/en/" target="_blank" rel="noopener">法国政府公开数据</a>：法国政府开放数据平台</li>
+<li><a href="https://data.gov.uk/" target="_blank" rel="noopener">英国政府公开数据</a>：提供英国各类数据</li>
+<li><a href="http://data.stats.gov.cn/" target="_blank" rel="noopener">国家数据</a>：中国国家统计局权威数据</li>
+<li><a href="http://www.stats.gov.cn/tjsj/ndsj/" target="_blank" rel="noopener">中国统计年鉴</a>：1999年至今中国统计年鉴，国家统计局官网，提供单页Excel文件下载</li>
+<li><a href="http://www.tjcn.org/" target="_blank" rel="noopener">中国统计信息网</a>：全国及各级政府各年度统计公报、年鉴等，为收费数据</li>
+<li><a href="https://www.nianjianwang.com/" target="_blank" rel="noopener">年鉴汪</a>：全国城市统计数据搜索引擎，浏览免费，下载收费</li>
+<li><a href="https://data.london.gov.uk/" target="_blank" rel="noopener">伦敦市公开数据</a>：提供伦敦人口、就业、环境等各类数据</li>
+<li><a href="http://data.mlr.gov.cn/" target="_blank" rel="noopener">国土资源部</a>：国土资源部对外公开的信息报告</li>
+</ol>
+<p><strong>其他细分行业数据</strong></p>
+<ol>
+<li><a href="http://www.chinairn.com/data/" target="_blank" rel="noopener">中研网数据</a>：提供医疗、房产、制造业、服务业、零售消费、车辆等全行业数据</li>
+<li><a href="http://www.chinabgao.com/stat" target="_blank" rel="noopener">中国报告大厅</a>：提供各行各业的基础数据、调查报告、分析报告、预测报告，种类丰富</li>
+<li><a href="https://cadmapper.com/" target="_blank" rel="noopener">CADMAPPER</a>：世界各大城市的DXF文件，原始数据源为OSM，NASA，USGS</li>
+<li><a href="https://registry.opendata.aws/" target="_blank" rel="noopener">亚马逊网络服务公共数据集</a>：跨科学云数据平台，包含化学、生物、经济等多个领域的数据集</li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets" target="_blank" rel="noopener">Awesome Public Datasets</a>：Github公共数据搜集项目，自然科学、社会科学覆盖较面，包含各个细分领域的数据库资源。</li>
+<li><a href="https://figshare.com/" target="_blank" rel="noopener">figshare</a>：数据分析与研究成果共享平台。</li>
+<li><a href="https://ukdataexplorer.com/" target="_blank" rel="noopener">英国公开数据浏览工具</a>：James Trimble制作的英国数据可视化浏览工具集；</li>
+<li><a href="https://datafrance.info/" target="_blank" rel="noopener">数据法国</a>：法国各类数据的可视化呈现；</li>
+<li><a href="https://www.dataeye.com/report" target="_blank" rel="noopener">DataEye</a>：基于国内游戏、汽车行业数据，进行多角度的行业调查报告撰写发布</li>
+<li><a href="http://www.cbooo.cn/" target="_blank" rel="noopener">CBO中国票房</a>：基于国内票房数据，统计票房排行、上座率等信息。</li>
+<li><a href="http://index.bitauto.com/login" target="_blank" rel="noopener">易车指数</a>：反映国内汽车销售市场，为购车者或汽车从业者提供参考的数据指数</li>
+<li><a href="https://report.amap.com/detail.do%3Fcity%3D110000" target="_blank" rel="noopener">高德地图</a>：支持实时查看国内交通情况，此外高德周期性提供一系列数据报告</li>
+<li><a href="https://fdc.fang.com/index/" target="_blank" rel="noopener">房天下</a>：提供中国指数研究院和CREIS中指数据，展示国内房地产数据情况</li>
+<li><a href="http://www.entgroup.com.cn/bg.aspx" target="_blank" rel="noopener">艺恩</a>：CBO中国票房数据的提供方，提供一些行业数据报告，如动漫IP价值研究报告</li>
+</ol>
+<hr>
+<p>以下转载自：<a href="https://www.zhihu.com/question/19766160/answer/179241024" target="_blank" rel="noopener">https://www.zhihu.com/question/19766160/answer/179241024</a></p>
+<h2 id="专业网站"><a href="#专业网站" class="headerlink" title="专业网站"></a>专业网站</h2><p>1.艾瑞：<a href="http://www.iresearch.cn/" target="_blank" rel="noopener">http://www.iresearch.cn/</a>  【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>2.梅花网：<a href="http://www.meihua.info/" target="_blank" rel="noopener">http://www.meihua.info/</a> 【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>3.易观智库：<a href="https://www.analysys.cn/" target="_blank" rel="noopener">https://www.analysys.cn/</a> 【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>4.企鹅智库: <a href="http://re.qq.com" target="_blank" rel="noopener">http://re.qq.com</a> 【PC、移动端行业、媒体、人群、内容数据 】</p>
+<p>5.媒介360:<a href="http://www.chinamedia360.com/main" target="_blank" rel="noopener">http://www.chinamedia360.com/main</a> </p>
+<p>6.Trustdata:<a href="http://www.itrustdata.cn/#service" target="_blank" rel="noopener">http://www.itrustdata.cn/#service</a>  【移动端行业、媒体数据】</p>
+<p>7.Quest Mobile：<a href="http://www.questmobile.com.cn/index.html" target="_blank" rel="noopener">http://www.questmobile.com.cn/index.html</a>  【移动端媒体数据为主】</p>
+<p>8.TalkingData:<a href="http://www.talkingdata.com/" target="_blank" rel="noopener">http://www.talkingdata.com/</a>   【移动端行业、媒体、人群数据】</p>
+<p>9.极光:<a href="https://www.jiguang.cn/" target="_blank" rel="noopener">https://www.jiguang.cn/</a>   【移动端媒体数据为主（强大的移动端大数据平台）】</p>
+<p> 10.友盟＋:<a href="http://www.umeng.com/" target="_blank" rel="noopener">http://www.umeng.com/</a> 【移动端行业、媒体、人群数据】</p>
+<p>11.艾媒网：<a href="http://www.iimedia.cn/#home" target="_blank" rel="noopener">http://www.iimedia.cn/#home</a> 【移动端媒体数据为主】</p>
+<h3 id="咨询公司"><a href="#咨询公司" class="headerlink" title="咨询公司"></a>咨询公司</h3><hr>
+<p>12.普华永道：<a href="http://www.pwccn.com/zh.html" target="_blank" rel="noopener">http://www.pwccn.com/zh.html</a> 【行业数据为主】</p>
+<p>13.胡润百富：<a href="http://www.hurun.net/CN/Home/Index" target="_blank" rel="noopener">http://www.hurun.net/CN/Home/Index</a>  【行业数据为主】</p>
+<p>14.尼尔森：<a href="http://www.nielsen.com/cn/zh.html" target="_blank" rel="noopener">http://www.nielsen.com/cn/zh.html</a></p>
+<p>15.麦肯锡：<a href="http://www.mckinsey.com.cn/" target="_blank" rel="noopener">http://www.mckinsey.com.cn/</a></p>
+<p>16.埃森哲：<a href="https://www.accenture.com/cn-zh/new-applied-now" target="_blank" rel="noopener">https://www.accenture.com/cn-zh/new-applied-now</a></p>
+<p>17.罗兰贝格：<a href="https://www.rolandberger.com/zh/" target="_blank" rel="noopener">https://www.rolandberger.com/zh/</a></p>
+<p>18.新华信：<a href="http://www.tns-sinotrust.com/" target="_blank" rel="noopener">http://www.tns-sinotrust.com/</a></p>
+<h3 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h3><hr>
+<p>19.CNNIC：<a href="http://www.cnnic.net.cn/" target="_blank" rel="noopener">http://www.cnnic.net.cn/</a></p>
+<p>20.索福瑞：<a href="http://www.csm.com.cn/" target="_blank" rel="noopener">http://www.csm.com.cn/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/01/python-wang-luo-shu-ju-cai-ji/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/01/python-wang-luo-shu-ju-cai-ji/" class="post-title-link" itemprop="url">Python网络数据采集</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-01 21:31:30" itemprop="dateCreated datePublished" datetime="2020-07-01T21:31:30+08:00">2020-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>588</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><hr>
+<p>示例源码： <a href="https://github.com/REMitchell/python-scraping" target="_blank" rel="noopener">https://github.com/REMitchell/python-scraping</a></p>
+<p>案例：<a href="http://wefeelfine.org" target="_blank" rel="noopener">http://wefeelfine.org</a></p>
+<p>pyhton基础：《Python 语言及其应用》</p>
+<p>​                        video ：<a href="http://shop.oreilly.com/product/110000448.do" target="_blank" rel="noopener">http://shop.oreilly.com/product/110000448.do</a></p>
+<h4 id="第1章-初见网络爬虫"><a href="#第1章-初见网络爬虫" class="headerlink" title="第1章 初见网络爬虫"></a>第1章 初见网络爬虫</h4><p>urllib库：  <a href="http://docs.python.org/3/library/urllib.html" target="_blank" rel="noopener">http://docs.python.org/3/library/urllib.html</a></p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request input urlopen
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"http://pythonscraping.com/pages/page1.html"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>html<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<h4 id="第2章-复杂的HTML"><a href="#第2章-复杂的HTML" class="headerlink" title="第2章 复杂的HTML"></a>第2章 复杂的HTML</h4><p>BeautifulSoup库：<a href="https://beautifulsoup.readthedocs.io/zh_CN/latest/" target="_blank" rel="noopener">https://beautifulsoup.readthedocs.io/zh_CN/latest/</a></p>
+<p>​                                <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="noopener">https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/</a></p>
+<p>findAll(tag, attributes, recursive, text, limit, keywords)</p>
+<p>find(tag, attributes, recursive, text, keywords)</p>
+<p>正则表达式：在线测试网站  <a href="http://regexpal.com" target="_blank" rel="noopener">http://regexpal.com</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/01/python-xie-wang-luo-pa-chong-bi-ji/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/01/python-xie-wang-luo-pa-chong-bi-ji/" class="post-title-link" itemprop="url">Python写网络爬虫（笔记）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-01 20:03:50" itemprop="dateCreated datePublished" datetime="2020-07-01T20:03:50+08:00">2020-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>650</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="第1章-网络爬虫简介"><a href="#第1章-网络爬虫简介" class="headerlink" title="第1章  网络爬虫简介"></a>第1章  网络爬虫简介</h4><p>1.3.1  检查robots.txt 文件</p>
+<p>​    确定哪些是可以抓取的内容</p>
+<p>​    eg：<a href="https://www.taobao.com/robots.txt" target="_blank" rel="noopener">https://www.taobao.com/robots.txt</a></p>
+<p>1.3.3  估算网站大小</p>
+<p><a href="http://www.google.com/advanced_search" target="_blank" rel="noopener">http://www.google.com/advanced_search</a></p>
+<p>Google 搜索</p>
+<p> “site:example.webscraping.com”</p>
+<p> “site:<a href="http://www.imeixi.cn&quot;" target="_blank" rel="noopener">www.imeixi.cn&quot;</a></p>
+<p>根据搜索结果，估算共有多少个网页</p>
+<p>1.3.4 识别网站所用技术</p>
+<pre class=" language-python"><code class="language-python">pip install buildwith
+
+<span class="token keyword">import</span> builtwith
+builtwith<span class="token punctuation">.</span>parse<span class="token punctuation">(</span><span class="token string">'http://www.imeixi.cn'</span><span class="token punctuation">)</span></code></pre>
+<p>1.3.5  寻找网站作者</p>
+<pre class=" language-python"><code class="language-python">pip install python<span class="token operator">-</span>whois
+
+<span class="token keyword">import</span> whois
+<span class="token keyword">print</span><span class="token punctuation">(</span>whois<span class="token punctuation">.</span>whois<span class="token punctuation">(</span><span class="token string">'imeixi.cn'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<h4 id="第2章-数据抓取"><a href="#第2章-数据抓取" class="headerlink" title="第2章 数据抓取"></a>第2章 数据抓取</h4><p>2.2 三种网页抓取方法</p>
+<p>2.2.1 正则表达式</p>
+<p><a href="https://docs.python.org/zh-cn/3/howto/regex.html" target="_blank" rel="noopener">https://docs.python.org/zh-cn/3/howto/regex.html</a></p>
+<p>2.2.2 Beautiful Soup</p>
+<p>2.2.3 Lxml</p>
+<h4 id="第7章-验证码处理"><a href="#第7章-验证码处理" class="headerlink" title="第7章 验证码处理"></a>第7章 验证码处理</h4><p>7.1.1  加载验证码图像</p>
+<p> Pillow 处理图像包  Image类</p>
+<p><a href="https://pillow.readthedocs.io/en/stable/" target="_blank" rel="noopener">https://pillow.readthedocs.io/en/stable/</a></p>
+<p>7.2 光学字符识别  OCR</p>
+<p>pip install pytesseract</p>
+<p>7.3.2  9kw 入门</p>
+<p><a href="Https://www.9kw.eu">Https://www.9kw.eu</a></p>
+<p><a href="Https://www.9kw.eu/api.html">Https://www.9kw.eu/api.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/04/30/python-xue-xi-shou-ce-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/30/python-xue-xi-shou-ce-4/" class="post-title-link" itemprop="url">Python学习手册(四)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-01 01:05:56" itemprop="dateCreated datePublished" datetime="2020-05-01T01:05:56+08:00">2020-05-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/30/python-xue-xi-shou-ce-4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/30/python-xue-xi-shou-ce-4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>745</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/images/articles/python.png" alt="python"><br>百度: <a href="https://baidu.com" target="_blank" rel="noopener">https://baidu.com</a><br>this is the first python notebook.<br>this is the first python notebook.<br>this is the first python notebook.<br>this is the first python notebook.<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/30/python-xue-xi-shou-ce-4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/04/30/python-xue-xi-shou-ce-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/30/python-xue-xi-shou-ce-3/" class="post-title-link" itemprop="url">Python学习手册(三)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-30 13:05:56" itemprop="dateCreated datePublished" datetime="2020-04-30T13:05:56+08:00">2020-04-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/30/python-xue-xi-shou-ce-3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/30/python-xue-xi-shou-ce-3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>29</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>this is the first python notebook.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/04/29/python-xue-xi-shou-ce-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/29/python-xue-xi-shou-ce-2/" class="post-title-link" itemprop="url">Python学习手册(二)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-30 03:05:56" itemprop="dateCreated datePublished" datetime="2020-04-30T03:05:56+08:00">2020-04-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/29/python-xue-xi-shou-ce-2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/29/python-xue-xi-shou-ce-2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>29</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>this is the first python notebook.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/04/29/python-xue-xi-shou-ce-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/29/python-xue-xi-shou-ce-1/" class="post-title-link" itemprop="url">Python学习手册(一)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-29 23:05:56" itemprop="dateCreated datePublished" datetime="2020-04-29T23:05:56+08:00">2020-04-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/29/python-xue-xi-shou-ce-1/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/29/python-xue-xi-shou-ce-1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>29</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>this is the first python notebook.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="imeixi"
+      src="/images/logo.png">
+  <p class="site-author-name" itemprop="name">imeixi</p>
+  <div class="site-description" itemprop="description">You want something. Go get it！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/imeixi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;imeixi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:imeixi@163.com" title="E-Mail → mailto:imeixi@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC2yp7dqiIc1qftNuLmNiEmg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC2yp7dqiIc1qftNuLmNiEmg" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.jianshu.com/u/495122eb3ccd" title="简书 → https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;495122eb3ccd" rel="noopener" target="_blank"><i class="fa fa-book fa-fw"></i>简书</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      链接网站
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://timediary.top/" title="http:&#x2F;&#x2F;timediary.top" rel="noopener" target="_blank">时光机</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">imeixi</span>
+  <div class="powered-by">
+    <span class="post-meta-divider">|</span>由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+</div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+  function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2020,03,30,00,00,00); //这里调整博客建站时间，时间：2019-05-14 00:00:00
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML=" 已运行"+ diffYears+" 年 "+ diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+  siteTime();
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv">
+        总访客量 <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv">
+        总访问量 <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'qdlMDxXjwWQokuDDIELeMvLj-MdYXbMMI',
+      appKey     : '1MHvx96GgaQByoOUF5zBFXjD',
+      placeholder: "有什么问题，欢迎留言指正与交流...",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

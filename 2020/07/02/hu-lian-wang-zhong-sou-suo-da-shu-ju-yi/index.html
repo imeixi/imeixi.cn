@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_36dp.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_18dp.svg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"imeixi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="转载来自：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;27692329&#x2F;answer&#x2F;852165031  金融财经数据 同花顺数据中心：提供股票债券等金融数据 和讯数据：提供各种股票、基金、外汇、债券等实时数据，有付费，有免费 零壹财经：大大小小的网贷数据、排行榜等 金融数据网：提供每日的黄金、汇率、农产品、汽油价格的相关数据 萝卜投研：提供股市、证券等数据，多以数据研究报告形">
+<meta property="og:type" content="article">
+<meta property="og:title" content="互联网中搜索大数据（一）">
+<meta property="og:url" content="https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/index.html">
+<meta property="og:site_name" content="IMEIXI">
+<meta property="og:description" content="转载来自：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;27692329&#x2F;answer&#x2F;852165031  金融财经数据 同花顺数据中心：提供股票债券等金融数据 和讯数据：提供各种股票、基金、外汇、债券等实时数据，有付费，有免费 零壹财经：大大小小的网贷数据、排行榜等 金融数据网：提供每日的黄金、汇率、农产品、汽油价格的相关数据 萝卜投研：提供股市、证券等数据，多以数据研究报告形">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-02T02:33:27.000Z">
+<meta property="article:modified_time" content="2020-11-25T04:32:31.447Z">
+<meta property="article:author" content="imeixi">
+<meta property="article:tag" content="Typora">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>互联网中搜索大数据（一） | IMEIXI</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165379070-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165379070-1');
+      }
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e401215d013058a71b56c9fb7ca5807c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="IMEIXI" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">IMEIXI</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">THE GROWTH PATH OF DATA SCIENTISTS</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="imeixi">
+      <meta itemprop="description" content="You want something. Go get it！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="IMEIXI">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          互联网中搜索大数据（一）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 10:33:27" itemprop="dateCreated datePublished" datetime="2020-07-02T10:33:27+08:00">2020-07-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>转载来自：<a href="https://www.zhihu.com/question/27692329/answer/852165031" target="_blank" rel="noopener">https://www.zhihu.com/question/27692329/answer/852165031</a></p>
+<hr>
+<h2 id="金融财经数据"><a href="#金融财经数据" class="headerlink" title="金融财经数据"></a>金融财经数据</h2><ol>
+<li><a href="http://data.10jqka.com.cn/" target="_blank" rel="noopener">同花顺数据中心</a>：提供股票债券等金融数据</li>
+<li><a href="http://data.hexun.com/" target="_blank" rel="noopener">和讯数据</a>：提供各种股票、基金、外汇、债券等实时数据，有付费，有免费</li>
+<li><a href="https://www.01caijing.com/data/index.htm" target="_blank" rel="noopener">零壹财经</a>：大大小小的网贷数据、排行榜等</li>
+<li><a href="http://dc.xinhua08.com/" target="_blank" rel="noopener">金融数据网</a>：提供每日的黄金、汇率、农产品、汽油价格的相关数据</li>
+<li><a href="https://robo.datayes.com/v2/home" target="_blank" rel="noopener">萝卜投研</a>：提供股市、证券等数据，多以数据研究报告形式展示</li>
+<li><a href="http://www.jrj.com.cn/" target="_blank" rel="noopener">金融界</a>：提供股市、融资等各种资金流向数据，以及丰富的财报和研报</li>
+<li><a href="http://www.eastmoney.com/" target="_blank" rel="noopener">东方财富网</a>：提供多国的股票、财税、行业、消费等大量丰富的经济数据</li>
+<li><a href="https://www.51test.net/jinrong/jilin/jilin/" target="_blank" rel="noopener">吉林金融网</a>：提供吉林的融资、市场数据</li>
+<li><a href="http://q.stock.sohu.com/zs/000001/index.shtml" target="_blank" rel="noopener">搜狐证券</a>：提供货币、外汇、行业、市场等宏观数据</li>
+<li><a href="http://www.wisers.com.cn/finance" target="_blank" rel="noopener">CCER经济金融数据库</a>：提供企业财务年度数据、股票收益数据等数据库下载</li>
+<li><a href="https://www.hkma.gov.hk/chi/" target="_blank" rel="noopener">香港金融管理局</a>：提供香港的各种经济及金融数据，以宏观数据为主</li>
+<li><a href="http://www.wefore.com/show-model3-7.html" target="_blank" rel="noopener">世纪未来</a>：数据服务平台，提供银行业务研究、金融大数据等各种付费数据</li>
+<li><a href="http://finance.sina.com.cn/mac/" target="_blank" rel="noopener">新浪财经</a>：提供国内国民经济、行业信息、对外经贸、居民收入等各种宏观的经济数据</li>
+<li><a href="https://www.ceicdata.com/zh-hans" target="_blank" rel="noopener">司尔亚司数据信息有限公司</a>：覆盖超过195+个国家的经济数据库，数据全面但收费</li>
+<li><a href="https://www.insee.fr/en/accueil" target="_blank" rel="noopener">INSEE数据</a>：法国统计与经济研究院公开数据</li>
+<li><a href="https://www.chinaventure.com.cn/cmsmodel/report/list.shtml" target="_blank" rel="noopener">投中研究院</a>：提供投资领域的分析报告，网站更新频率较高</li>
+</ol>
+<h2 id="互联网数据"><a href="#互联网数据" class="headerlink" title="互联网数据"></a>互联网数据</h2><p><strong>营销查询：</strong></p>
+<ol>
+<li><a href="https://www.5118.com/" target="_blank" rel="noopener">5118</a> / <a href="http://tool.chinaz.com/" target="_blank" rel="noopener">chinaz</a>：支持查询网站排名及发展趋势、百度收录情况等信息</li>
+<li><a href="http://index.baidu.com/v2/index.html/" target="_blank" rel="noopener">百度指数</a>：百度旗下/以百度网民行为数据为基础的数据分享平台，支持查询需求图谱</li>
+<li>微信指数：微信旗下/基于微信大数据分析的移动端指数，打开微信→搜索“微信指数”可用</li>
+<li><a href="http://mi.talkingdata.com/" target="_blank" rel="noopener">移动观象台</a>：基于移动设备用户的操作行为，提供应用、公众号排行等，以及大量数据报告</li>
+<li><a href="https://www.newrank.cn/public/info/list.html" target="_blank" rel="noopener">新榜</a>/<a href="https://data.wxb.com/rank" target="_blank" rel="noopener">微小宝</a>/易赞：几款工具比较类似，支持查看公众号排行、看公众号人群画像等功能</li>
+<li><a href="http://index.1688.com/" target="_blank" rel="noopener">阿里指数</a>：阿里旗下/反映淘宝平台市场动向的数据分析平台</li>
+</ol>
+<p><strong>报告分析：</strong></p>
+<ol>
+<li><a href="http://www.199it.com/archives/tag/%E6%98%93%E8%A7%82%E6%99%BA%E5%BA%93" target="_blank" rel="noopener">易观智库</a>：199IT导航的母网站，权威的互联网数据平台，涵盖战略新兴产业、电商互联网、共享经济、社交营销、移动互联网以及其他互联网服务的数据及分析报告</li>
+<li><a href="http://www.iresearch.cn/" target="_blank" rel="noopener">艾瑞网</a>：高频率更新互联网前沿的新闻资讯、分析报告，旗下包括艾瑞指数、艾瑞咨询等</li>
+<li><a href="https://www.iimedia.cn/%23shuju" target="_blank" rel="noopener">艾媒网</a>：艾媒与艾瑞无关，艾媒网发布的研究报告多偏向移动互联网方向</li>
+<li><a href="https://www.cbndata.com/report" target="_blank" rel="noopener">CBNDdata</a>：以阿里巴巴的商业数据库为基础，输出产业经济分析报告</li>
+<li><a href="http://www.questmobile.com.cn/blog.html" target="_blank" rel="noopener">QuestMobile</a>：周期性地发布一些关于APP的研究报告</li>
+<li><a href="http://www.aliresearch.com/blog/index/lists/tag/3831.html" target="_blank" rel="noopener">阿里研究院</a>：阿里旗下/发布研究电商等方向趋势的数据报告，内容多与阿里相关</li>
+<li><a href="http://zt.360.cn/report/" target="_blank" rel="noopener">360研究报告</a>：360旗下/移动、PC、网站、企业、诈骗等安全领域的研究，以及大数据等非安全领域的研究</li>
+<li><a href="http://www.cnnic.net.cn/hlwfzyj/" target="_blank" rel="noopener">中国互联网信息研究中心</a>：经国家主管部门批准组建的管理和服务机构，经常发布一些有价值的互联网信息报告</li>
+<li><a href="http://www.caict.ac.cn/kxyj/qwfb/bps/" target="_blank" rel="noopener">中国信通院</a>：针对互联网多个行业的发展趋势，发布白皮书，角度较为宏观</li>
+<li><a href="http://www.cnidp.cn/" target="_blank" rel="noopener">中国互联网数据平台</a>：提供全国各地区互联网发展报告、基础数据及研究分析报告，数据及报告偏向学术性研究</li>
+<li><a href="http://www.gsdata.cn/" target="_blank" rel="noopener">清博大数据</a>：提供微信、微博、头条榜单数据，各种研究报告、数据报告、舆情报告及行业热点</li>
+<li><a href="http://www.cbdio.com/" target="_blank" rel="noopener">数据观</a>：丰富的前沿行业资讯，及部分研究报告下载</li>
+<li><a href="https://data.qq.com/" target="_blank" rel="noopener">腾讯大数据</a>：数据服务平台，提供调查研究、移动互联网及特色数据报告，质量较高</li>
+<li><a href="http://www.thebigdata.cn/" target="_blank" rel="noopener">大数据世界</a>：提供大数据相关资讯、应用案例、技术方案及资料下载</li>
+</ol>
+<h2 id="地理数据"><a href="#地理数据" class="headerlink" title="地理数据"></a><strong>地理数据</strong></h2><p><strong>水土气候数据：</strong></p>
+<ol>
+<li>水土保持生态建设网<a href="http://www.swcc.org.cn/" target="_blank" rel="noopener">http://www.swcc.org.cn/</a></li>
+<li>黄河风情<a href="http://www.yellowriver.org/" target="_blank" rel="noopener">http://www.yellowriver.org/</a></li>
+<li>黄河流域数据中心<a href="http://henu.geodata.cn/index.jsp" target="_blank" rel="noopener">http://henu.geodata.cn/index.jsp</a></li>
+<li>黄土高原水土保护数据库<a href="http://www.loess.csdb.cn/" target="_blank" rel="noopener">http://www.loess.csdb.cn/</a></li>
+<li>数字黑河<a href="http://heihe.westgis.ac.cn/Default.aspx%3Ftabid%3D106" target="_blank" rel="noopener">http://heihe.westgis.ac.cn/Default.aspx?tabid=106</a></li>
+<li>大气科学数据库<a href="http://data.iap.ac.cn/" target="_blank" rel="noopener">http://data.iap.ac.cn/</a></li>
+<li>中国气象科学数据<a href="http://cdc.cma.gov.cn/" target="_blank" rel="noopener">http://cdc.cma.gov.cn/</a></li>
+<li>中国气象科学数据共享服务网<a href="http://cdc.cma.gov.cn/" target="_blank" rel="noopener">http://cdc.cma.gov.cn/</a></li>
+<li>全球森林土地覆盖动态<a href="http://www.fao.org/gtos/gofc-gold/" target="_blank" rel="noopener">http://www.fao.org/gtos/gofc-gold/</a> </li>
+<li>FRA 2000<a href="http://edcsns17.cr.usgs.gov/glcc/fao/index.html" target="_blank" rel="noopener">http://edcsns17.cr.usgs.gov/glcc/fao/index.html</a>全球森林资源</li>
+<li>NOAA<a href="http://www.noaa.gov/" target="_blank" rel="noopener">http://www.noaa.gov/</a>美国国家海洋和大气管理局</li>
+<li>NCDC <a href="http://lwf.ncdc.noaa.gov/oa/ncdc.html%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%B0%94%E5%80%99%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83" target="_blank" rel="noopener">http://lwf.ncdc.noaa.gov/oa/ncdc.html美国国家气候数据中心</a></li>
+<li>国际水管理研究所<a href="http://www.iwmidsp.org/iwmi/info/main.asp" target="_blank" rel="noopener">http://www.iwmidsp.org/iwmi/info/main.asp</a></li>
+<li>气候研究所<a href="http://www.cru.uea.ac.uk/" target="_blank" rel="noopener">http://www.cru.uea.ac.uk/</a></li>
+<li>植被覆盖数据<a href="http://www.vgt.vito.be/" target="_blank" rel="noopener">http://www.vgt.vito.be/</a></li>
+</ol>
+<p><strong>环境数据：</strong></p>
+<ol>
+<li>黄土区农业与生态环境数据分中心<a href="http://loess.geodata.cn/" target="_blank" rel="noopener">http://loess.geodata.cn/</a></li>
+<li>东北黑土农业生态数据库<a href="http://www.blackland.csdb.cn/default.asp" target="_blank" rel="noopener">http://www.blackland.csdb.cn/default.asp</a></li>
+<li>中国西部环境与生态科学数据中心<a href="http://westdc.westgis.ac.cn/" target="_blank" rel="noopener">http://westdc.westgis.ac.cn/</a></li>
+<li>西部数据中心<a href="http://westdc.westgis.ac.cn/data" target="_blank" rel="noopener">http://westdc.westgis.ac.cn/data</a></li>
+<li>黄土高原区域数据共享运行服务中心<a href="http://loess.geodata.cn/Portal/%3FisCookieChecked%3Dtrue" target="_blank" rel="noopener">http://loess.geodata.cn/Portal/?isCookieChecked=true</a></li>
+</ol>
+<p><strong>遥感数据：</strong></p>
+<ol>
+<li>地面站RS地图查询<a href="http://cs.rsgs.ac.cn/cs_cn/query/query_map.asp" target="_blank" rel="noopener">http://cs.rsgs.ac.cn/cs_cn/query/query_map.asp</a></li>
+<li>甘肃省基础地理信息中心<a href="http://www.cehuiju.gansu.gov.cn/5chcg/giscenter.asp" target="_blank" rel="noopener">http://www.cehuiju.gansu.gov.cn/5chcg/giscenter.asp</a></li>
+<li>遥感数据网络资源<a href="http://ecology.bnu.edu.cn/gejp/student/zhj/webresource.htm" target="_blank" rel="noopener">http://ecology.bnu.edu.cn/gejp/student/zhj/webresource.htm</a></li>
+<li>中国遥感数据网<a href="http://ids.ceode.ac.cn/" target="_blank" rel="noopener">http://ids.ceode.ac.cn/</a></li>
+<li>GLCF <a href="http://glcf.geodata.cn/etm/Welcome.do" target="_blank" rel="noopener">http://glcf.geodata.cn/etm/Welcome.do</a></li>
+<li>GIS FORUM <a href="http://www.gisforum.net/%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E7%9A%84GIS%E4%B8%AD%E6%96%87%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99" target="_blank" rel="noopener">http://www.gisforum.net/全球最大的GIS中文门户网站</a></li>
+<li>遥感数据共享<a href="http://ids.ceode.ac.cn/" target="_blank" rel="noopener">http://ids.ceode.ac.cn/</a></li>
+</ol>
+<p><strong>其他自然人文数据：</strong></p>
+<ol>
+<li>地理国情监测云平台 <a href="http://www.dsac.cn/" target="_blank" rel="noopener">http://www.dsac.cn/</a></li>
+<li>中国资源卫星应用中心 <a href="http://www.cresda.com/cn/profile.htm" target="_blank" rel="noopener">http://www.cresda.com/cn/profile.htm</a></li>
+<li>中国自然资源数据库 <a href="http://www.data.ac.cn/index.asp" target="_blank" rel="noopener">http://www.data.ac.cn/index.asp</a></li>
+<li>中国科学院资源环境科学数据中心 <a href="http://www.resdc.cn/resdc/first.asp" target="_blank" rel="noopener">http://www.resdc.cn/resdc/first.asp</a></li>
+<li>中国地球系统科学数据共享网 <a href="http://www.geodata.cn:8086/Metadata/index.jsp" target="_blank" rel="noopener">http://www.geodata.cn:8086/Metadata/index.jsp</a></li>
+<li>国家地球系统科学数据共享服务平台 <a href="http://www.geodata.cn/" target="_blank" rel="noopener">http://www.geodata.cn/</a></li>
+<li><a href="http://pm25.in/" target="_blank" rel="noopener">PM25.in | PM2.5(细颗粒物)及空气质量指数(AQI)实时查询！</a>：中国空气质量监测实时数据<a href="http://pm25.in/" target="_blank" rel="noopener">http://pm25.in/</a></li>
+<li>国际科学数据服务平台 <a href="http://datamirror.csdb.cn/index.jsp" target="_blank" rel="noopener">http://datamirror.csdb.cn/index.jsp</a></li>
+<li>原始数据搜索 <a href="https://wist.echo.nasa.gov/api" target="_blank" rel="noopener">https://wist.echo.nasa.gov/api</a></li>
+<li>中国科学院资源环境科学数据中心 <a href="http://www.resdc.cn/resdc/first.asp" target="_blank" rel="noopener">http://www.resdc.cn/resdc/first.asp</a></li>
+<li>世界聚集人口数据 <a href="http://beta.sedac.ciesin.columbia.edu/gpw/index.jsp" target="_blank" rel="noopener">http://beta.sedac.ciesin.columbia.edu/gpw/index.jsp</a></li>
+<li>光谱数据分析网站 <a href="http://modis.gsfc.nasa.gov/" target="_blank" rel="noopener">http://modis.gsfc.nasa.gov/</a></li>
+<li>美国航空航天局NASA <a href="http://daac.gsfc.nasa.gov/" target="_blank" rel="noopener">http://daac.gsfc.nasa.gov/</a></li>
+<li>城市轨道交通<a href="http://www.ntsg.umt.edu/" target="_blank" rel="noopener">http://www.ntsg.umt.edu/</a></li>
+<li>人地系统主题数据库<a href="http://webpanda.iis.u-tokyo.ac.jp/" target="_blank" rel="noopener">http://webpanda.iis.u-tokyo.ac.jp/</a></li>
+</ol>
+<p><strong>影像数据：</strong></p>
+<ol>
+<li><a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">USGS Earth Explorer</a>：提供Landsat、MODIS等数据</li>
+<li><a href="https://scihub.copernicus.eu/dhus/%23/home" target="_blank" rel="noopener">ESA’s Sentinel Mission</a>：提供Sentinel系列卫星数据，可以下载欧洲航天局所属的影像数据</li>
+<li><a href="https://www.avl.class.noaa.gov/saa/products/welcome%3Bjsessionid%3DFFC5D89936910E14B9D9220EC684138C" target="_blank" rel="noopener">NOAA CLASS</a>：提供高品质大气数据集，包括美国国防部（DoD）、极地作战环境卫星（POES）、NOAA的地球静止环境卫星（GOES）以及其他派生数据</li>
+<li><a href="https://reverb.echo.nasa.gov/reverb/%23utf8%3D%E2%9C%93%26spatial_map%3Dsatellite%26spatial_type%3Drectangle" target="_blank" rel="noopener">NASA Reverb</a>：提供多种类数据，包括：Aqua, Terra, Aura, TRMM, Calipso, NASA DC, JASON, ENVISAT等</li>
+<li><a href="https://earth.esa.int/web/guest/eoli-sa-dismissed%3Bjsessionid%3D40706D0F248CFB22BEFC95C0839A693C.jvm2" target="_blank" rel="noopener">EOLi</a>：欧洲航天局的地球观测目录和订购服务的客户，通过Java 程序下载数据，支持的数据包括：Envisat, ERS, IKONOS, DMC, ALOS, SPOT, Kompsat, Proba, IRS, SCISAT.</li>
+<li><a href="http://www.dgi.inpe.br/CDSR/" target="_blank" rel="noopener">INPE</a>：提供中巴资源卫星数据</li>
+<li><a href="https://bhuvan-app3.nrsc.gov.in/data/download/index.php" target="_blank" rel="noopener">Bhuvan Indian Geo-Platform of ISRO</a>：提供印度境内的MS-1， Cartosat,，OceanSat and ResourceSat数据以及全球的NVDI数据、南亚国家的CartoDem Version -3R1数据和北印度洋的气候数据</li>
+</ol>
+<p><strong>政府数据</strong></p>
+<ol>
+<li><a href="https://data.gov.sg/" target="_blank" rel="noopener">新加坡政府公开数据</a>：提供新加坡各类数据</li>
+<li><a href="https://www.data.gov/" target="_blank" rel="noopener">美国政府公开数据</a>：提供美国全国各类数据</li>
+<li><a href="https://www.data.gouv.fr/en/" target="_blank" rel="noopener">法国政府公开数据</a>：法国政府开放数据平台</li>
+<li><a href="https://data.gov.uk/" target="_blank" rel="noopener">英国政府公开数据</a>：提供英国各类数据</li>
+<li><a href="http://data.stats.gov.cn/" target="_blank" rel="noopener">国家数据</a>：中国国家统计局权威数据</li>
+<li><a href="http://www.stats.gov.cn/tjsj/ndsj/" target="_blank" rel="noopener">中国统计年鉴</a>：1999年至今中国统计年鉴，国家统计局官网，提供单页Excel文件下载</li>
+<li><a href="http://www.tjcn.org/" target="_blank" rel="noopener">中国统计信息网</a>：全国及各级政府各年度统计公报、年鉴等，为收费数据</li>
+<li><a href="https://www.nianjianwang.com/" target="_blank" rel="noopener">年鉴汪</a>：全国城市统计数据搜索引擎，浏览免费，下载收费</li>
+<li><a href="https://data.london.gov.uk/" target="_blank" rel="noopener">伦敦市公开数据</a>：提供伦敦人口、就业、环境等各类数据</li>
+<li><a href="http://data.mlr.gov.cn/" target="_blank" rel="noopener">国土资源部</a>：国土资源部对外公开的信息报告</li>
+</ol>
+<p><strong>其他细分行业数据</strong></p>
+<ol>
+<li><a href="http://www.chinairn.com/data/" target="_blank" rel="noopener">中研网数据</a>：提供医疗、房产、制造业、服务业、零售消费、车辆等全行业数据</li>
+<li><a href="http://www.chinabgao.com/stat" target="_blank" rel="noopener">中国报告大厅</a>：提供各行各业的基础数据、调查报告、分析报告、预测报告，种类丰富</li>
+<li><a href="https://cadmapper.com/" target="_blank" rel="noopener">CADMAPPER</a>：世界各大城市的DXF文件，原始数据源为OSM，NASA，USGS</li>
+<li><a href="https://registry.opendata.aws/" target="_blank" rel="noopener">亚马逊网络服务公共数据集</a>：跨科学云数据平台，包含化学、生物、经济等多个领域的数据集</li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets" target="_blank" rel="noopener">Awesome Public Datasets</a>：Github公共数据搜集项目，自然科学、社会科学覆盖较面，包含各个细分领域的数据库资源。</li>
+<li><a href="https://figshare.com/" target="_blank" rel="noopener">figshare</a>：数据分析与研究成果共享平台。</li>
+<li><a href="https://ukdataexplorer.com/" target="_blank" rel="noopener">英国公开数据浏览工具</a>：James Trimble制作的英国数据可视化浏览工具集；</li>
+<li><a href="https://datafrance.info/" target="_blank" rel="noopener">数据法国</a>：法国各类数据的可视化呈现；</li>
+<li><a href="https://www.dataeye.com/report" target="_blank" rel="noopener">DataEye</a>：基于国内游戏、汽车行业数据，进行多角度的行业调查报告撰写发布</li>
+<li><a href="http://www.cbooo.cn/" target="_blank" rel="noopener">CBO中国票房</a>：基于国内票房数据，统计票房排行、上座率等信息。</li>
+<li><a href="http://index.bitauto.com/login" target="_blank" rel="noopener">易车指数</a>：反映国内汽车销售市场，为购车者或汽车从业者提供参考的数据指数</li>
+<li><a href="https://report.amap.com/detail.do%3Fcity%3D110000" target="_blank" rel="noopener">高德地图</a>：支持实时查看国内交通情况，此外高德周期性提供一系列数据报告</li>
+<li><a href="https://fdc.fang.com/index/" target="_blank" rel="noopener">房天下</a>：提供中国指数研究院和CREIS中指数据，展示国内房地产数据情况</li>
+<li><a href="http://www.entgroup.com.cn/bg.aspx" target="_blank" rel="noopener">艺恩</a>：CBO中国票房数据的提供方，提供一些行业数据报告，如动漫IP价值研究报告</li>
+</ol>
+<hr>
+<p>以下转载自：<a href="https://www.zhihu.com/question/19766160/answer/179241024" target="_blank" rel="noopener">https://www.zhihu.com/question/19766160/answer/179241024</a></p>
+<h2 id="专业网站"><a href="#专业网站" class="headerlink" title="专业网站"></a>专业网站</h2><p>1.艾瑞：<a href="http://www.iresearch.cn/" target="_blank" rel="noopener">http://www.iresearch.cn/</a>  【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>2.梅花网：<a href="http://www.meihua.info/" target="_blank" rel="noopener">http://www.meihua.info/</a> 【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>3.易观智库：<a href="https://www.analysys.cn/" target="_blank" rel="noopener">https://www.analysys.cn/</a> 【PC、移动端行业、媒体、人群、内容数据】</p>
+<p>4.企鹅智库: <a href="http://re.qq.com" target="_blank" rel="noopener">http://re.qq.com</a> 【PC、移动端行业、媒体、人群、内容数据 】</p>
+<p>5.媒介360:<a href="http://www.chinamedia360.com/main" target="_blank" rel="noopener">http://www.chinamedia360.com/main</a> </p>
+<p>6.Trustdata:<a href="http://www.itrustdata.cn/#service" target="_blank" rel="noopener">http://www.itrustdata.cn/#service</a>  【移动端行业、媒体数据】</p>
+<p>7.Quest Mobile：<a href="http://www.questmobile.com.cn/index.html" target="_blank" rel="noopener">http://www.questmobile.com.cn/index.html</a>  【移动端媒体数据为主】</p>
+<p>8.TalkingData:<a href="http://www.talkingdata.com/" target="_blank" rel="noopener">http://www.talkingdata.com/</a>   【移动端行业、媒体、人群数据】</p>
+<p>9.极光:<a href="https://www.jiguang.cn/" target="_blank" rel="noopener">https://www.jiguang.cn/</a>   【移动端媒体数据为主（强大的移动端大数据平台）】</p>
+<p> 10.友盟＋:<a href="http://www.umeng.com/" target="_blank" rel="noopener">http://www.umeng.com/</a> 【移动端行业、媒体、人群数据】</p>
+<p>11.艾媒网：<a href="http://www.iimedia.cn/#home" target="_blank" rel="noopener">http://www.iimedia.cn/#home</a> 【移动端媒体数据为主】</p>
+<h3 id="咨询公司"><a href="#咨询公司" class="headerlink" title="咨询公司"></a>咨询公司</h3><hr>
+<p>12.普华永道：<a href="http://www.pwccn.com/zh.html" target="_blank" rel="noopener">http://www.pwccn.com/zh.html</a> 【行业数据为主】</p>
+<p>13.胡润百富：<a href="http://www.hurun.net/CN/Home/Index" target="_blank" rel="noopener">http://www.hurun.net/CN/Home/Index</a>  【行业数据为主】</p>
+<p>14.尼尔森：<a href="http://www.nielsen.com/cn/zh.html" target="_blank" rel="noopener">http://www.nielsen.com/cn/zh.html</a></p>
+<p>15.麦肯锡：<a href="http://www.mckinsey.com.cn/" target="_blank" rel="noopener">http://www.mckinsey.com.cn/</a></p>
+<p>16.埃森哲：<a href="https://www.accenture.com/cn-zh/new-applied-now" target="_blank" rel="noopener">https://www.accenture.com/cn-zh/new-applied-now</a></p>
+<p>17.罗兰贝格：<a href="https://www.rolandberger.com/zh/" target="_blank" rel="noopener">https://www.rolandberger.com/zh/</a></p>
+<p>18.新华信：<a href="http://www.tns-sinotrust.com/" target="_blank" rel="noopener">http://www.tns-sinotrust.com/</a></p>
+<h3 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h3><hr>
+<p>19.CNNIC：<a href="http://www.cnnic.net.cn/" target="_blank" rel="noopener">http://www.cnnic.net.cn/</a></p>
+<p>20.索福瑞：<a href="http://www.csm.com.cn/" target="_blank" rel="noopener">http://www.csm.com.cn/</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/reward/wechat.png" alt="imeixi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/reward/alipay.png" alt="imeixi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Typora/" rel="tag"># Typora</a>
+              <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/01/python-wang-luo-shu-ju-cai-ji/" rel="prev" title="Python网络数据采集">
+      <i class="fa fa-chevron-left"></i> Python网络数据采集
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-er/" rel="next" title="互联网中搜索大数据(二)">
+      互联网中搜索大数据(二) <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#金融财经数据"><span class="nav-number">1.</span> <span class="nav-text">金融财经数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网数据"><span class="nav-number">2.</span> <span class="nav-text">互联网数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#地理数据"><span class="nav-number">3.</span> <span class="nav-text">地理数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#专业网站"><span class="nav-number">4.</span> <span class="nav-text">专业网站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#咨询公司"><span class="nav-number">4.1.</span> <span class="nav-text">咨询公司</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#官方网站"><span class="nav-number">4.2.</span> <span class="nav-text">官方网站</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="imeixi"
+      src="/images/logo.png">
+  <p class="site-author-name" itemprop="name">imeixi</p>
+  <div class="site-description" itemprop="description">You want something. Go get it！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/imeixi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;imeixi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:imeixi@163.com" title="E-Mail → mailto:imeixi@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC2yp7dqiIc1qftNuLmNiEmg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC2yp7dqiIc1qftNuLmNiEmg" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.jianshu.com/u/495122eb3ccd" title="简书 → https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;495122eb3ccd" rel="noopener" target="_blank"><i class="fa fa-book fa-fw"></i>简书</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      链接网站
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://timediary.top/" title="http:&#x2F;&#x2F;timediary.top" rel="noopener" target="_blank">时光机</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">imeixi</span>
+  <div class="powered-by">
+    <span class="post-meta-divider">|</span>由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+</div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+  function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2020,03,30,00,00,00); //这里调整博客建站时间，时间：2019-05-14 00:00:00
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML=" 已运行"+ diffYears+" 年 "+ diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+  siteTime();
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv">
+        总访客量 <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv">
+        总访问量 <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://imeixi.github.io/2020/07/02/hu-lian-wang-zhong-sou-suo-da-shu-ju-yi/',]
+      });
+      });
+  </script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'qdlMDxXjwWQokuDDIELeMvLj-MdYXbMMI',
+      appKey     : '1MHvx96GgaQByoOUF5zBFXjD',
+      placeholder: "有什么问题，欢迎留言指正与交流...",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
